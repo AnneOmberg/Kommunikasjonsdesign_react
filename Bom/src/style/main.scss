@@ -1,0 +1,208 @@
+@import url('./_variables.scss');
+
+body{
+    margin: 0;
+    font-family: var(--font-roboto);
+    color: var(--black);
+    background-color: var(--light);
+}
+
+#db {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: var(--font-dosis);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#home {
+    font-family: var(--font-roboto);
+    font-weight: 100;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--contrast);
+}
+
+header{
+    background-image: url(../sources/group-image.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .foto{
+        background-color: rgba(0, 0, 0, 0.7);
+        color: var(--white);
+        margin: 0;
+        margin-top: -1.75rem;
+    }
+}
+
+article{
+    margin: 3rem;
+}
+
+#title {
+    padding: 1rem 1rem;
+    color: var(--white);
+    margin: 0;
+    font-size: 2rem;
+    background-color: rgb(28, 27, 27, 0.7);
+}
+
+#intro {
+    position: relative;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    max-width: 65vw;
+    background-color: var(--light);
+    padding: 1rem 1rem 1rem 2rem;
+    z-index: 0;
+}
+
+main{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+#Jonas{
+    font-weight: 600;
+    font-size: 1.75rem;
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+.sitat {
+    font-style: italic;
+    font-weight: 300;
+}
+
+figure{
+    margin: 0;
+    
+    img{
+        width: 100%;
+    }
+}
+
+.foto {
+    text-align: right;
+    position: relative;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    margin: 0;
+    font-style: italic;
+}
+
+.foto-text {
+    color: var(--white);
+    background-color: var(--dark);
+    font-weight: 300;
+    padding: .5rem 1rem;
+    margin: 0;
+    margin-top: -.5rem;
+}
+
+h3{
+    margin: 2rem 0 1rem;
+}
+
+h4{
+    margin: 3rem 0 1rem;
+}
+
+footer {
+    padding: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--font-dosis);
+
+
+    h5 {
+        font-weight: 300;
+        text-align: right;
+        font-size: large;
+        margin: 0;
+    }
+
+    .date {
+        text-align: right;
+        font-weight: 300;
+        color: var(--contrast);
+    }
+
+    .role {
+        font-weight: 200;
+        font-size: small;
+        text-align: right;
+    }
+
+    #VA{
+        padding-top: 2rem;
+    }
+}
+
+/* PC-skjermer */
+
+@media only screen and (min-width: 750px) {
+    #content{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1.5fr 5fr;
+        gap: 1rem;
+    }
+
+    header{
+        grid-column: 1/4;
+        margin: 0;
+        height: auto;
+    }
+    
+    nav{
+        z-index: +2;
+        grid-row: 1;
+    }
+
+    #title{
+        padding: 1rem 2rem;
+    }
+
+    article{
+        margin: 0;
+    }
+
+    #beer-pong{
+        background-position: bottom center;
+    }
+}
+
+/* @media only screen and (min-width: 1500px) {
+    #content{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+} */
