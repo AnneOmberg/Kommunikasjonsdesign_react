@@ -1,4 +1,13 @@
-export default function Toll() {
+import { useEffect } from "react";
+
+export default function Toll({ setTest }) {
+
+    useEffect(() => {
+        const tollTest = document.getElementById("test")?.innerText
+        setTest(tollTest)
+    
+      }, [setTest])
+
     return(
         <>
             <section id="content">
@@ -6,7 +15,7 @@ export default function Toll() {
                     <h1 id="title">Drikkingens dilemma: <br/> Hvordan former alkohol studentmiljøet?</h1>                                                                
                     <p className="photographer">Foto: Jenny Østreng</p>
                 </section>
-
+                <p id="test">YEYYYYYYYY!!!</p>
                 <main>
                     <article>
                         <p className="sitat" id="SPESIELL-ID"></p>
