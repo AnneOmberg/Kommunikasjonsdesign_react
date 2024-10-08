@@ -22,11 +22,15 @@ function App() {
       const hiddenDiv = document.createElement('div')
       document.body.appendChild(hiddenDiv)
       console.log(hiddenDiv)
-      
+      const render = (<Toll setTest={setTest} />, <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />  )
+
       // Create a temporary React root to render the component
       const root = ReactDOM.createRoot(hiddenDiv)
-      root.render(<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote}/>)
-      root.render(<Toll setTest={setTest} />)
+      root.render(
+        <Toll setTest={setTest} />, <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />
+      )
+      // &&
+      // root.render(<Toll setTest={setTest} />)
 
       // Clean up the temporary div after extracting the title
       setTimeout(() => {
@@ -38,15 +42,13 @@ function App() {
 
 
   return (
-    <>
     <Layout>
       <Routes>
         <Route index element={<Home drinkTitle={drinkTitle} jonasQuote={jonasQuote} test={test} />} />
-        <Route path="drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote}/>} />
+        <Route path="drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />} />
         <Route path="toll" element={<Toll setTest={setTest} />} />
       </Routes>
     </Layout>
-    </>
   )
 }
 

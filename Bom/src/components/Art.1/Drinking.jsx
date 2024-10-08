@@ -1,28 +1,25 @@
 import { useEffect } from "react";
 
 export default function Drinking({ setDrinkTitle, setJonasQuote }) {
-  
+
     useEffect(() => {
-    const drinkingTitle = document.getElementById("title")?.innerText
-    const quote = document.getElementById("Jonas")?.innerText
-    setDrinkTitle(drinkingTitle)
-    setJonasQuote(quote)
+        const drinkingTitle = document.getElementById("title")?.innerText
+        const quote = document.getElementById("Jonas")?.innerText
+        setDrinkTitle(drinkingTitle)
+        setJonasQuote(quote)
+    }, [setDrinkTitle, setJonasQuote])
 
-  }, [setDrinkTitle, setJonasQuote])
-
-    return(
+    return (
         <section id="content">
             <section id="header">
-                <h1 id="title">Drikkingens dilemma: <br/> Hvordan former alkohol studentmiljøet?</h1>                                                                
+                <h1 id="title">Drikkingens dilemma: <br /> Hvordan former alkohol studentmiljøet?</h1>
                 <p className="photographer">Foto: Jenny Østreng</p>
             </section>
-
-            {/* <p>{drinkTitle}</p> */}
 
             <main>
                 <article>
                     <p className="sitat" id="Jonas">- Jeg synes det er litt leit at det alltid er alkohol med i bildet når man skal finne på noe med andre studenter, sier Jonas Heggelund (24), student ved Høgskolen i Østfold</p>
-                    
+
                     <figure>
                         <img src="./src/pictures/Drinking/man-drink.PNG" alt="kollektiv-bilde" />
                         <p className="photo-text">

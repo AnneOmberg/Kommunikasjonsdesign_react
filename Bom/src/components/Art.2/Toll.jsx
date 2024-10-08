@@ -5,21 +5,20 @@ export default function Toll({ setTest }) {
     useEffect(() => {
         const tollTest = document.getElementById("test")?.innerText
         setTest(tollTest)
-    
-      }, [setTest])
+    }, [setTest])
 
-    return(
+    return (
         <>
             <section id="content">
                 <section id="header">
-                    <h1 id="title">Drikkingens dilemma: <br/> Hvordan former alkohol studentmiljøet?</h1>                                                                
+                    <h1 id="title">Drikkingens dilemma: <br /> Hvordan former alkohol studentmiljøet?</h1>
                     <p className="photographer">Foto: Jenny Østreng</p>
                 </section>
                 <p id="test">YEYYYYYYYY!!!</p>
                 <main>
                     <article>
                         <p className="sitat" id="SPESIELL-ID"></p>
-                        
+
                         <figure>
                             <img src="./src/pictures/" alt="" />
                             <p className="photo-text">
@@ -67,13 +66,13 @@ export default function Toll({ setTest }) {
                 <li>Fv. – Ny bru i Fredrikstad</li>
             </ol>
             <p>Notes:
-Bomstasjonskart Bypakke Nedre Glomma fase 2. Oppstart januar 2024.
-Pilene indikerer innkrevingsretningen.
+                Bomstasjonskart Bypakke Nedre Glomma fase 2. Oppstart januar 2024.
+                Pilene indikerer innkrevingsretningen.
 
-S1, S2 = Stengte veier
-K1, K2 = Bomstasjoner Værstebrua og Kråkerøybrua
+                S1, S2 = Stengte veier
+                K1, K2 = Bomstasjoner Værstebrua og Kråkerøybrua
 
-For mer informasjon se bypakkenedreglomma.no eller bompengekalkulator.</p>
+                For mer informasjon se bypakkenedreglomma.no eller bompengekalkulator.</p>
         </>
     )
 }
