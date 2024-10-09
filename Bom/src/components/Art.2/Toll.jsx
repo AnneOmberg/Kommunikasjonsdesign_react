@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export default function Toll({ setTest }) {
 
     useEffect(() => {
-        const tollTest = document.getElementById("test")?.innerText
+        const tollTest = document.getElementById("title")?.innerText
         setTest(tollTest)
     }, [setTest])
 
@@ -11,10 +11,10 @@ export default function Toll({ setTest }) {
         <>
             <section id="content">
                 <section id="header">
-                    <h1 id="title">Drikkingens dilemma: <br /> Hvordan former alkohol studentmiljøet?</h1>
+                    <h1 id="title">Innespærra i Nedre Østfold -<br /> Hvor langt skal det gå?</h1>
                     <p className="photographer">Foto: Jenny Østreng</p>
                 </section>
-                <p id="test">YEYYYYYYYY!!!</p>
+                <p id="test">WOHOOOO!!!</p>
                 <main>
                     <article>
                         <p className="sitat" id="SPESIELL-ID"></p>

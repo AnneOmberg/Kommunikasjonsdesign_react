@@ -26,11 +26,9 @@ function App() {
 
       // Create a temporary React root to render the component
       const root = ReactDOM.createRoot(hiddenDiv)
-      root.render(
-        <Toll setTest={setTest} />, <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />
-      )
-      // &&
-      // root.render(<Toll setTest={setTest} />)
+      root.render(<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />)
+      const root2 = ReactDOM.createRoot(hiddenDiv)
+      root2.render(<Toll setTest={setTest} />)
 
       // Clean up the temporary div after extracting the title
       setTimeout(() => {
