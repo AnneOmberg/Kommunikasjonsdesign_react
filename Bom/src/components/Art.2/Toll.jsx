@@ -1,11 +1,32 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { list } from "./TollList";
 
 export default function Toll({ setTest }) {
 
+    // const listTest = document.getElementById("List")?.innerText
+    // const test = async () => {
+    //     listTest.map((list) => {
+    //         <li>{list}</li>
+    //     })
+    // }
+
+    // const Test = async () => {
+
+    // }
+    
+    // tollTest.scrollBy(300, 300)
+    // tollTest.scrollBy({
+    //     top: 100,
+    //     left: 100,
+    //     behavior: "smooth",
+    // });
+    
+    
     useEffect(() => {
         const tollTest = document.getElementById("title")?.innerText
         setTest(tollTest)
     }, [setTest])
+
 
     return (
         <>
@@ -15,6 +36,7 @@ export default function Toll({ setTest }) {
                     <p className="photographer">Foto: Jenny Østreng</p>
                 </section>
                 <p id="test">WOHOOOO!!!</p>
+                {/* <div>{test}</div> */}
                 <main>
                     <article>
                         <p className="sitat" id="SPESIELL-ID"></p>
@@ -40,8 +62,13 @@ export default function Toll({ setTest }) {
                 </main>
             </section>
             <p>Bomstasjoner</p>
-            <ol>
-                <li>Rv. 110 – Seut</li>
+            <ol id="List">
+                {list?.map((tolls, index) => (
+                    <li key={index}>{tolls.toll}</li>
+                    // console.log(tolls.toll)
+                ))}
+
+                {/* <li>Rv. 110 – Seut</li>
                 <li>Rv. 110 – Fredrikstadbrua øst</li>
                 <li>Fv. 381 – Veumveien</li>
                 <li>Fv. 109 – Råbekken</li>
@@ -63,7 +90,7 @@ export default function Toll({ setTest }) {
                 <li>E6 – Rampeavkjøring Alvim fra nord</li>
                 <li>E6 – Rampeavkjøring Alvim fra sør</li>
                 <li>Kv. Tuneveien</li>
-                <li>Fv. – Ny bru i Fredrikstad</li>
+                <li>Fv. – Ny bru i Fredrikstad</li>*/}
             </ol>
             <p>Notes:
                 Bomstasjonskart Bypakke Nedre Glomma fase 2. Oppstart januar 2024.
@@ -72,7 +99,7 @@ export default function Toll({ setTest }) {
                 S1, S2 = Stengte veier
                 K1, K2 = Bomstasjoner Værstebrua og Kråkerøybrua
 
-                For mer informasjon se bypakkenedreglomma.no eller bompengekalkulator.</p>
+                For mer informasjon se bypakkenedreglomma.no eller bompengekalkulator.</p> 
         </>
     )
 }

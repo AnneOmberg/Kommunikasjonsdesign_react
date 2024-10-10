@@ -21,14 +21,15 @@ function App() {
     import('./components/Art.1/Drinking' && './components/Art.2/Toll').then(({}) => {
       const hiddenDiv = document.createElement('div')
       document.body.appendChild(hiddenDiv)
-      console.log(hiddenDiv)
-      const render = (<Toll setTest={setTest} />, <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />  )
 
       // Create a temporary React root to render the component
       const root = ReactDOM.createRoot(hiddenDiv)
-      root.render(<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />)
-      const root2 = ReactDOM.createRoot(hiddenDiv)
-      root2.render(<Toll setTest={setTest} />)
+      root.render(
+        <>
+          <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />
+          <Toll setTest={setTest} />
+        </>
+      )
 
       // Clean up the temporary div after extracting the title
       setTimeout(() => {
@@ -38,6 +39,23 @@ function App() {
   }, [])
   // }
 
+//   useEffect(() => {
+//     const handleScroll = () => {
+//         const main = document.querySelector('main');
+//         const footer = document.querySelector('footer');
+//         const scrollWatcher = document.querySelector('.scroll-watcher');
+//         const mainRect = main.getBoundingClientRect();
+//         const footerRect = footer.getBoundingClientRect();
+//         const mainHeight = main.scrollHeight;
+//         const scrollTop = window.scrollY - mainRect.top;
+//         const scrollPercent = Math.min(Math.max(scrollTop / (mainHeight - footerRect.height), 0), 1);
+
+//         scrollWatcher.style.transform = `scale(1, ${scrollPercent})`;
+//     };
+
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+// }, []);
 
   return (
     <Layout>
