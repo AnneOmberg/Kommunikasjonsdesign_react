@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export default function Drinking({ setDrinkTitle, setJonasQuote }) {
 
     useEffect(() => {
-        const drinkingTitle = document.getElementById("title")?.innerText
+        const drinkingTitle = document.getElementById("drinkingTitle")?.innerText
         const quote = document.getElementById("Jonas")?.innerText
         setDrinkTitle(drinkingTitle)
         setJonasQuote(quote)
@@ -12,7 +12,7 @@ export default function Drinking({ setDrinkTitle, setJonasQuote }) {
     return (
         <section id="content">
             <section id="header">
-                <h1 id="title">Drikkingens dilemma: <br /> Hvordan former alkohol studentmiljøet?</h1>
+                <h1 id="drinkingTitle">Drikkingens dilemma: <br /> Hvordan former alkohol studentmiljøet?</h1>
                 <p className="photographer">Foto: Jenny Østreng</p>
             </section>
 

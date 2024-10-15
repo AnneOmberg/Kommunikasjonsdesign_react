@@ -12,6 +12,7 @@ export const list = [
     { toll: "Fv. 130 – Skjærviken"},
     { toll: "Rv. 22 – Hafslund syd"},
     { toll: "Kv. Navestadveien"},
+    { toll: "Fv. 118 – Sarpsbru"},
     { toll: "Fv. 114 – Grålum"},
     { toll: "E6 – Rampeavkjøring Lekevoll fra sør"},
     { toll: "E6 – Rampeavkjøring Lekevoll fra nord"},
