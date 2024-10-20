@@ -9,6 +9,10 @@ body{
     background-color: var(--beige);
 }
 
+.gif{
+    animation-duration: 1s;
+}
+
 .scroll-watcher{
     display: flex;
     width: 5px; /* Change this to width */
