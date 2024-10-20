@@ -7,7 +7,7 @@ import './style/main.scss'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
-import Drinking from './components/Art.1/Drinking'
+import Drinking from './components/1-Story/Drinking'
 import Toll from './components/Art.2/Toll'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
   // Smålig modifisert kode fra Copilot{
   useEffect(() => {
     // Dynamically import the Drinking component and extract the title
-    import('./components/Art.1/Drinking' && './components/Art.2/Toll').then(({}) => {
+    import('./components/Art.1/Drinking' && './components/Art.2/Toll').then(({ }) => {
       const hiddenDiv = document.createElement('div')
       document.body.appendChild(hiddenDiv)
 
@@ -39,23 +39,23 @@ function App() {
   }, [])
   // }
 
-//   useEffect(() => {
-//     const handleScroll = () => {
-//         const main = document.querySelector('main');
-//         const footer = document.querySelector('footer');
-//         const scrollWatcher = document.querySelector('.scroll-watcher');
-//         const mainRect = main.getBoundingClientRect();
-//         const footerRect = footer.getBoundingClientRect();
-//         const mainHeight = main.scrollHeight;
-//         const scrollTop = window.scrollY - mainRect.top;
-//         const scrollPercent = Math.min(Math.max(scrollTop / (mainHeight - footerRect.height), 0), 1);
+  //   useEffect(() => {
+  //     const handleScroll = () => {
+  //         const main = document.querySelector('main');
+  //         const footer = document.querySelector('footer');
+  //         const scrollWatcher = document.querySelector('.scroll-watcher');
+  //         const mainRect = main.getBoundingClientRect();
+  //         const footerRect = footer.getBoundingClientRect();
+  //         const mainHeight = main.scrollHeight;
+  //         const scrollTop = window.scrollY - mainRect.top;
+  //         const scrollPercent = Math.min(Math.max(scrollTop / (mainHeight - footerRect.height), 0), 1);
 
-//         scrollWatcher.style.transform = `scale(1, ${scrollPercent})`;
-//     };
+  //         scrollWatcher.style.transform = `scale(1, ${scrollPercent})`;
+  //     };
 
-//     window.addEventListener('scroll', handleScroll);
-//     return () => window.removeEventListener('scroll', handleScroll);
-// }, []);
+  //     window.addEventListener('scroll', handleScroll);
+  //     return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   return (
     <Layout>
