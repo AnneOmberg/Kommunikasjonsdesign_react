@@ -7,7 +7,7 @@ export default function Home({drinkTitle, jonasQuote, test}){
     <main id="Front-page">
         <h1>Siste nytt!</h1>
             <article id="XL">
-        <Link>
+        <Link to="/adhd">
                 <h2>Diagnosering som voksen</h2>
                 <img src="#" alt="#"/>
                 <p>Mennesker som hører stemmer i sine hoder, kan f.eks. ha schizofreni. Og de som har storslåtte ideer - som tror de er Jesus eller konge - kan ha en form for manisk-depressiv (bipolar) sykdom.
