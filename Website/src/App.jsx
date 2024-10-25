@@ -9,6 +9,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import Drinking from './components/1-Story/Drinking'
 import Toll from './components/Art.2/Toll'
+import XLstory from './components/XL-story/XLstory'
 
 function App() {
   const [drinkTitle, setDrinkTitle] = useState("")
@@ -63,6 +64,7 @@ function App() {
         <Route index element={<Home drinkTitle={drinkTitle} jonasQuote={jonasQuote} test={test} />} />
         <Route path="drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />} />
         <Route path="toll" element={<Toll setTest={setTest} />} />
+        <Route path="adhd" element={<XLstory />} />
       </Routes>
     </Layout>
   )
