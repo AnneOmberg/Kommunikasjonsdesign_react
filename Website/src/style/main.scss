@@ -9,12 +9,29 @@ body{
     background-color: var(--beige);
 }
 
-.gif{
-    animation-duration: 1s;
-}
+// .gif{
+//     // position: relative;
+//     // z-index: +1;
+//     background-color: black;
+//     height: 100px;
+//     width: 120px;
+//     // background-image: url(../pictures/Drinking/group-image.jpg);
+//     background-position: center;
+//     background-attachment: fixed;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     z-index: -1;
+// }
 .background-parallax{
-    background-color: black;
-    height: 20px;
+    background-image: url(../pictures/Drinking/Asset\ 16.webp);
+    display: flex;
+    // background-color: black;
+    // height: 20vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .scroll-watcher{
@@ -82,7 +99,7 @@ a {
     background-repeat: no-repeat;
     z-index: -1;
     position: relative;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

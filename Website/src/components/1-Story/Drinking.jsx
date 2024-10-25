@@ -62,8 +62,9 @@ export default function Drinking({ setDrinkTitle, setJonasQuote }) {
                     <p>
                         For noen studenter er alkohol en naturlig del av studentlivet som de tror kan styrke sosiale relasjoner og fellesskap. For andre fungerer alkohol imidlertid som en barriere som skaper følelser av ekskludering. Mange oppfatter også de alkoholfrie alternativene som mindre attraktive, noe som fører til et press om å drikke for å unngå å stå utenfor. Når studentene ble spurt om hvilke alternativer som finnes til alkohol og fest, svarer Ronja Haraldseth (20) dette:
                     </p>
-                    <img className="gif" src="./src/pictures/Drinking/transparent.webp" alt="drink animation" width="200px" />
-                    <div className="background-parllax"></div>
+                    <div className="background-parallax">
+                        <img className="gif" src="./src/pictures/Drinking/transparent.webp" alt="drink animation" width="200px" />
+                    </div>
                     <p className="sitat">- Flere studenter ved Høgskolen i Østfold mener derfor at det er på tide å skape et mer inkluderende studentmiljø ved å tilby flere attraktive alkoholfrie alternativer.</p>
                 </article>
             </main>
