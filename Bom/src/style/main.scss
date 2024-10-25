@@ -32,7 +32,6 @@ body{
 
 #db {
     font-size: 3rem;
-    font-weight: 600;
 }
 
 #content{
@@ -48,6 +47,10 @@ header{
     font-family: var(--font-dosis);
     background-color: var(--black);
     color: var(--white);
+
+    a {
+        color: var(--white);
+    }
 }
 
 nav{
@@ -63,8 +66,7 @@ nav{
     }
 }
 
-a {
-    color: var(--white);
+a{
     text-decoration: none;
 }
 

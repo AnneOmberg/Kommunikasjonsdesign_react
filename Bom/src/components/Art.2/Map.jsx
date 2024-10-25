@@ -92,7 +92,7 @@ export default function Map() {
   return (
     <>
       {/* Fullscreen Fixed Map */}
-      <div id="map" style={{ position: 'sticky', top: 0, height: '100vh', width: '100%' }}>
+      <div id="mapcontainer" style={{ height: '100vh', width: '100%' }}>
         <MapContainer
           center={[59.269294, 11.028108]} // Initial center of the map
           zoom={11}

@@ -68,10 +68,9 @@ function App() {
         <Route path="/drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />} />
         {/* <Route path="/toll" element={<Map/>} /> */}
         <Route path="/toll" element={<Toll setTest={setTest} />} />
-        <Route path="/adhd" element={<RandomArticle />} >
-          <Route path="late" element={<Late />} />
-          <Route path="early" element={<Early />} />
-        </Route>
+        <Route path="/adhd" element={<RandomArticle />} />
+          <Route path="adhd/late" element={<Late />} />
+          <Route path="adhd/early" element={<Early />} />
 
       </Routes>
     </Layout>
