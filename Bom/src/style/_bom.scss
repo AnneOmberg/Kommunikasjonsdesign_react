@@ -1,0 +1,39 @@
+#map{
+    position: sticky;
+    top: 0;
+    // position: relative;
+    height: 100vh;
+}
+
+.leaflet-control-container{
+    display: none;
+}
+
+.leaflet-marker-icon, .leaflet-marker-shadow{
+    margin-left: -12px;
+    margin-top: -41px;
+}
+
+// .scrollContainer {
+//     width: 100%;
+//     min-height: 100vh;
+//     position: relative;
+//     overflow: hidden;
+//     padding-bottom: 20vh;
+// }
+// .scrollContainerDynamicBG {
+//     transition: background-image 2s;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+// }
+
+// .scrollText {
+//     max-width: 50rem;
+//     padding: 2rem;
+//     background: #fff;
+//     color: #232323;
+//     font-family: 'Fira Sans', sans-serif;
+//     margin: 30rem auto;
+// }

@@ -1,6 +1,7 @@
 // @import url('./_variables.scss');
 @import url('./_home.scss');
 @import url('./_variables.scss');
+@import url('./_bom.scss');
 
 body{
     margin: 0;
@@ -9,24 +10,24 @@ body{
     background-color: var(--beige);
 }
 
-.scroll-watcher{
-    display: flex;
-    width: 5px; /* Change this to width */
-    height: 100%; /* Change this to height */
-    position: fixed;
-    left: 0; /* Change this to left */
-    z-index: 1;
-    background-color: lime;
-    scale: 1 0; /* Adjust scale for vertical */
-    transform-origin: bottom; /* Change this to top */
+// .scroll-watcher{
+//     display: flex;
+//     width: 5px; /* Change this to width */
+//     height: 100%; /* Change this to height */
+//     position: fixed;
+//     left: 0; /* Change this to left */
+//     z-index: 1;
+//     background-color: lime;
+//     scale: 1 0; /* Adjust scale for vertical */
+//     transform-origin: bottom; /* Change this to top */
 
-    animation: scroll-watcher linear;
-    animation-timeline: scroll();
-}
+//     animation: scroll-watcher linear;
+//     animation-timeline: scroll();
+// }
 
-@keyframes scroll-watcher{
-    to{scale: 1 1;}
-}
+// @keyframes scroll-watcher{
+//     to{scale: 1 1;}
+// }
 
 #db {
     font-size: 3rem;

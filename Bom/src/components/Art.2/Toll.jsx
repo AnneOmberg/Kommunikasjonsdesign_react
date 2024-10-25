@@ -21,7 +21,8 @@ export default function Toll({ setTest }) {
     //     left: 100,
     //     behavior: "smooth",
     // });
-    
+
+    //FUNCTION TO CHECK IF ELEMENT IS IN VIEWPORT
     
     useEffect(() => {
         const tollTest = document.getElementById("tollTitle")?.innerText
@@ -29,8 +30,18 @@ export default function Toll({ setTest }) {
     }, [setTest])
 
 
+
     return (
         <>
+        {/* <section id='changesSection' className="scrollContainer scrollContainerDynamicBG">
+            <div id="loser" className="scrollText">
+            <h2>The first section to change background image</h2>
+            <p>Changes to bilde1.jpg</p>
+            </div>
+            </section> */}
+            <div id="map">
+                <Map/>
+            </div>
             <section id="content">
                 <section id="header">
                     <h1 id="tollTitle">Innespærra i Nedre Østfold -<br /> Hvor langt skal det gå?</h1>
@@ -41,9 +52,6 @@ export default function Toll({ setTest }) {
                 <main>
                     <article>
                         <p className="sitat" id="SPESIELL-ID"></p>
-                        <section>
-                            <Map/>
-                        </section>
                         <figure>
                             <img src="./src/pictures/" alt="" />
                             <p className="photo-text">

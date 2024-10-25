@@ -10,6 +10,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import Drinking from './components/Art.1/Drinking'
 import Toll from './components/Art.2/Toll'
+import Map from './components/Art.2/Map'
 
 function App() {
   const [drinkTitle, setDrinkTitle] = useState("")
@@ -63,7 +64,7 @@ function App() {
       <Routes>
         <Route index element={<Home drinkTitle={drinkTitle} jonasQuote={jonasQuote} test={test} />} />
         <Route path="drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />} />
-        <Route path="toll" element={<Toll setTest={setTest} />} />
+        <Route path="toll" element={<Map/>} />
       </Routes>
     </Layout>
   )
