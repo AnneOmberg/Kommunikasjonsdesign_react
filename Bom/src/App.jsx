@@ -20,27 +20,27 @@ function App() {
   const [test, setTest] = useState("")
 
   // Smålig modifisert kode fra Copilot{
-  // useEffect(() => {
-  //   // Dynamically import the Drinking component and extract the title
-  //   import('./components/Art.1/Drinking' && './components/Art.2/Toll').then(({ }) => {
-  //     const hiddenDiv = document.createElement('div')
-  //     document.body.appendChild(hiddenDiv)
+  useEffect(() => {
+    // Dynamically import the Drinking component and extract the title
+    import('./components/Art.1/Drinking' && './components/Art.2/Toll').then(({ }) => {
+      const hiddenDiv = document.createElement('div')
+      document.body.appendChild(hiddenDiv)
 
-  //     // Create a temporary React root to render the component
-  //     const root = ReactDOM.createRoot(hiddenDiv)
-  //     root.render(
-  //       <>
-  //         <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />
-  //         <Toll setTest={setTest} />
-  //       </>
-  //     )
+      // Create a temporary React root to render the component
+      const root = ReactDOM.createRoot(hiddenDiv)
+      root.render(
+        <>
+          <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />
+          <Toll setTest={setTest} />
+        </>
+      )
 
-  //     // Clean up the temporary div after extracting the title
-  //     setTimeout(() => {
-  //       document.body.removeChild(hiddenDiv)
-  //     }, 10)
-  //   })
-  // }, [])
+      // Clean up the temporary div after extracting the title
+      setTimeout(() => {
+        document.body.removeChild(hiddenDiv)
+      }, 10)
+    })
+  }, [])
   // }
 
   //   useEffect(() => {

@@ -14,7 +14,7 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 export default function Map() {
-  const [visibleMarkerIndex, setVisibleMarkerIndex] = useState(-1);
+  const [visibleMarkerIndex, setVisibleMarkerIndex] = useState(0);
 
   // Real marker coordinates (replace this array with your actual coordinates)
   const markerCoordinates = [
@@ -31,7 +31,7 @@ export default function Map() {
     { position: [59.214917, 11.083399], popup: "Marker 11: Fv. 130 – Skjærviken" },
     { position: [59.271676, 11.129987], popup: "Marker 12: Rv. 22 – Hafslund syd" },
     { position: [59.264743, 11.122296], popup: "Marker 13: Kv. Navestadveien" },
-    { position: [59.276222, 11.132943], popup: "Marker 14: Fv. 118 - Sarpsbru" },
+    { position: [59.276222, 11.132943], popup: "Marker 14: Fv. 118 – Sarpsbru" },
     { position: [59.295273, 11.064848], popup: "Marker 15: Fv. 114 – Grålum" },
     { position: [59.296025, 11.069185], popup: "Marker 16: E6 – Rampeavkjøring Lekevoll fra sør" },
     { position: [59.296672, 11.065751], popup: "Marker 17: E6 – Rampeavkjøring Lekevoll fra nord" },
@@ -107,11 +107,13 @@ export default function Map() {
 
           {markerCoordinates.map((position, index) =>
             index <= visibleMarkerIndex ? (
-              <Marker key={index} position={position.position}>
-                <Popup>{position.popup}</Popup>
-               { console.log("Kordinater", position)}
+              <div id={index}>
+                <Marker key={index} position={position.position}>
+                  <Popup>{position.popup}</Popup>
+                { console.log("Kordinater", position)}
 
-              </Marker>
+                </Marker>
+              </div>
             ) : null
           )}
         </MapContainer>

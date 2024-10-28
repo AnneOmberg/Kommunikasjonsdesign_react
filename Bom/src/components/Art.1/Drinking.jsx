@@ -10,13 +10,13 @@ export default function Drinking({ setDrinkTitle, setJonasQuote }) {
     }, [setDrinkTitle, setJonasQuote])
 
     return (
-        <section id="content">
+        <main id="drink">
             <section id="header">
                 <h1 id="drinkingTitle">Drikkingens dilemma: <br /> Hvordan former alkohol studentmiljøet?</h1>
                 <p className="photographer">Foto: Jenny Østreng</p>
             </section>
 
-            <main>
+            <section id="content">
                 <article>
                     <p className="sitat" id="Jonas">- Jeg synes det er litt leit at det alltid er alkohol med i bildet når man skal finne på noe med andre studenter, sier Jonas Heggelund (24), student ved Høgskolen i Østfold</p>
 
@@ -60,7 +60,7 @@ export default function Drinking({ setDrinkTitle, setJonasQuote }) {
                     </p>
                     <p className="sitat">- Flere studenter ved Høgskolen i Østfold mener derfor at det er på tide å skape et mer inkluderende studentmiljø ved å tilby flere attraktive alkoholfrie alternativer.</p>
                 </article>
-            </main>
-        </section>
+            </section>
+        </main>
     )
 }
