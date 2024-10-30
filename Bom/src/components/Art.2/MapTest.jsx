@@ -8,7 +8,7 @@ import {Icon} from 'leaflet'
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import { list } from './TollList';
-import circle from '../../pictures/Toll/Circle.png'
+import circle from '../../pictures/Toll/round.png'
 
 // const circleIcon = new L.Icon ({
 //     iconUrl : './scr/pictures/Toll/Circle.png"',
@@ -38,34 +38,6 @@ import circle from '../../pictures/Toll/Circle.png'
 export default function MapTest() {
   const [visibleMarkerIndex, setVisibleMarkerIndex] = useState(-1);
 
-  // Real marker coordinates (replace this array with your actual coordinates)
-  const markerCoordinates = [
-    { position: [59.225253, 10.916457], popup: "Marker 1: Rv. 110 – Seut" },
-    { position: [59.207374, 10.968305], popup: "Marker 2: Rv. 110 – Fredrikstadbrua øst" },
-    { position: [59.235725, 10.932217], popup: "Marker 3: Fv. 381 – Veumveien" },
-    { position: [59.243911, 10.981632], popup: "Marker 4: Fv. 109 – Råbekken" },
-    { position: [59.242653, 10.982024], popup: "Marker 5: Kv. – Dikeveien" },
-    { position: [59.239674, 10.991795], popup: "Marker 6: Kv. – Evjebekken" },
-    { position: [59.323444, 10.956405], popup: "Marker 7: Fv. 112 – Hauge bru" },
-    { position: [59.269294, 11.028108], popup: "Marker 8: Fv. 109 – Rolvsøysund" },
-    { position: [59.257960, 11.054326], popup: "Marker 9: Rv. 22 – Årum vest" },
-    { position: [59.232806, 11.054400], popup: "Marker 10: Fv. 107 – Vardeveien" },
-    { position: [59.214917, 11.083399], popup: "Marker 11: Fv. 130 – Skjærviken" },
-    { position: [59.271676, 11.129987], popup: "Marker 12: Rv. 22 – Hafslund syd" },
-    { position: [59.264743, 11.122296], popup: "Marker 13: Kv. Navestadveien" },
-    { position: [59.276222, 11.132943], popup: "Marker 14: Fv. 118 – Sarpsbru" },
-    { position: [59.295273, 11.064848], popup: "Marker 15: Fv. 114 – Grålum" },
-    { position: [59.296025, 11.069185], popup: "Marker 16: E6 – Rampeavkjøring Lekevoll fra sør" },
-    { position: [59.296672, 11.065751], popup: "Marker 17: E6 – Rampeavkjøring Lekevoll fra nord" },
-    { position: [59.305571, 11.042623], popup: "Marker 18: Fv. 118 – Kalnes" },
-    { position: [59.270763, 11.070972], popup: "Marker 19: Fv. 109 – Alvim vest" },
-    { position: [59.269200, 11.075840], popup: "Marker 20: Fv. 1168 – Alvimveien" },
-    { position: [59.276017, 11.084626], popup: "Marker 21: E6 – Rampeavkjøring Alvim fra nord" },
-    { position: [59.277506, 11.085907], popup: "Marker 22: E6 – Rampeavkjøring Alvim fra sør" },
-    { position: [59.293812, 11.075446], popup: "Marker 23: Kv. Tuneveien" },
-    { position: [59.250323, 11.014572], popup: "Marker 24: Fv. – Ny bru i Fredrikstad" }
-  ];
-
   // Function to check if element is in viewport
   function isInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -88,7 +60,7 @@ export default function MapTest() {
             if (marker0 && isOutOfViewportFromBottom(marker0)) {
             setVisibleMarkerIndex(-1);
             } else {
-            markerCoordinates.forEach((_, index) => {
+            list.forEach((_, index) => {
                 const element = document.getElementById(`marker-${index}`);
                 if (element && isInViewport(element)) {
                 setVisibleMarkerIndex(index);
@@ -105,7 +77,7 @@ export default function MapTest() {
 
     useEffect(() => {
         scroll()
-    }, [markerCoordinates]);
+    }, [list]);
 
     console.log(visibleMarkerIndex)
 
@@ -114,11 +86,12 @@ export default function MapTest() {
         {/* Fullscreen Fixed Map */}
         <div id="mapcontainer" style={{ height: '100vh', width: '100%' }}>
             <MapContainer
-            center={[59.269294, 11.028108]} // Initial center of the map
+            center={[59.269294, 11.028108]}
             zoom={11}
-            scrollWheelZoom={false} // Disable scroll zooming
-            dragging={false}        // Disable dragging
-            style={{ height: '100%', width: '100%' }} // Fullscreen map
+            scrollWheelZoom={false}
+            dragging={false}
+            doubleClickZoom={false}
+            style={{ height: '100%', width: '100%' }}
             >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -127,8 +100,8 @@ export default function MapTest() {
 
             {list.map((position, index) =>
                 index <= visibleMarkerIndex ? (
-                <Marker key={index} position={position.position} icon={circleIcon(15)}>
-                    <p>{index + 1}</p>
+                <Marker key={index} position={position.position} icon={circleIcon(8)}>
+                    {/* <p>{index + 1}</p> */}
                 </Marker>
                 ) : null
             )}

@@ -17,8 +17,8 @@
     margin-top: 50vh;
     position: sticky;
     z-index: 1000;
-    color: #fff;
-    background-color: #232323;
+    color: var(--white);
+    background-color: var(--black);
     margin-left: 1rem;
 }
 
@@ -34,9 +34,11 @@
     display: none;
 }
 
-.leaflet-marker-icon, .leaflet-marker-shadow{
+.leaflet-marker-icon{
     margin-left: -12px;
     margin-top: -41px;
+    border: #232323 solid 2px;
+    border-radius: 10px;
 }
 
 .leaflet-popup{
