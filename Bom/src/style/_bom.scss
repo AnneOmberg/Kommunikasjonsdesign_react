@@ -1,0 +1,82 @@
+#mapcontainer{
+    position: sticky;
+    top: 0;
+    // position: relative;
+    height: 100vh;
+    // z-index: -1;
+}
+
+#map{
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+.markers{
+    display: table;
+    padding: .5rem 1rem;
+    margin-top: 50vh;
+    position: sticky;
+    z-index: 1000;
+    color: var(--white);
+    background-color: var(--black);
+    margin-left: 1rem;
+}
+
+#marker-0{
+    margin-top: 25vh;
+}
+
+#marker-23{
+    margin-bottom: 100vh;
+}
+
+.leaflet-control-container{
+    display: none;
+}
+
+.leaflet-marker-icon{
+    margin-left: -12px;
+    margin-top: -41px;
+    border: #232323 solid 2px;
+    border-radius: 10px;
+}
+
+.leaflet-popup{
+    bottom: 20px;
+    left: -72px;
+}
+
+.scrollContainer {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20vh;
+}
+.scrollContainerDynamicBG {
+    transition: background-image 2s;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.scrollText {
+    max-width: 50rem;
+    padding: 2rem;
+    background: #fff;
+    color: #232323;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 30rem auto;
+}
+
+.textBlock {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 750px) {
+    #toll{
+        grid-template-rows: auto auto auto;
+    }
+}

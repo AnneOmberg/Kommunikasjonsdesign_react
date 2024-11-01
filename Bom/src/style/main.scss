@@ -1,23 +1,45 @@
+// @import url('./_variables.scss');
+@import url('./_home.scss');
 @import url('./_variables.scss');
+@import url('./_bom.scss');
+@import url('./_drinking.scss');
 
-body {
+body{
     margin: 0;
     font-family: var(--font-roboto);
     color: var(--black);
-    background-color: var(--light);
+    background-color: var(--beige);
 }
+
+// .scroll-watcher{
+//     display: flex;
+//     width: 5px; /* Change this to width */
+//     height: 100%; /* Change this to height */
+//     position: fixed;
+//     left: 0; /* Change this to left */
+//     z-index: 1;
+//     background-color: lime;
+//     scale: 1 0; /* Adjust scale for vertical */
+//     transform-origin: bottom; /* Change this to top */
+
+//     animation: scroll-watcher linear;
+//     animation-timeline: scroll();
+// }
+
+// @keyframes scroll-watcher{
+//     to{scale: 1 1;}
+// }
 
 #db {
     font-size: 3rem;
-    font-weight: 600;
 }
 
-#content {
+main{
     display: flex;
     flex-direction: column;
 }
 
-nav {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,24 +47,31 @@ nav {
     font-family: var(--font-dosis);
     background-color: var(--black);
     color: var(--white);
+
+    a {
+        color: var(--white);
+    }
 }
 
-#home {
+nav{
     font-family: var(--font-roboto);
     font-weight: 100;
+
+    ul{
+        list-style: none;
+
+        a:hover {
+            text-decoration: underline solid;
+        }
+    }
 }
 
-a {
-    color: var(--white);
+a{
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--contrast);
-}
-
-header {
-    background-image: url(../sources/group-image.jpg);
+#header{
+    background-image: url(../pictures/Drinking/group-image.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -54,7 +83,7 @@ header {
     justify-content: space-between;
     flex-direction: column;
 
-    .foto {
+    .photographer{
         background-color: rgba(0, 0, 0, 0.7);
         color: var(--white);
         margin: 0;
@@ -62,7 +91,7 @@ header {
     }
 }
 
-article {
+article{
     margin: 3rem;
 }
 
@@ -79,18 +108,18 @@ article {
     justify-content: flex-end;
     margin-top: 3rem;
     max-width: 65vw;
-    background-color: var(--light);
+    background-color: var(--beige);
     padding: 1rem 1rem 1rem 2rem;
     z-index: 0;
 }
 
-main {
+#content{
     grid-column: 2;
     grid-row: 2;
 }
 
 
-#Jonas {
+#Jonas{
     font-weight: 600;
     font-size: 1.75rem;
     grid-column: 1/4;
@@ -102,15 +131,15 @@ main {
     font-weight: 300;
 }
 
-figure {
+figure{
     margin: 0;
-
-    img {
+    
+    img{
         width: 100%;
     }
 }
 
-.foto {
+.photographer {
     text-align: right;
     position: relative;
     font-size: 0.7rem;
@@ -119,20 +148,20 @@ figure {
     font-style: italic;
 }
 
-.foto-text {
+.photo-text {
     color: var(--white);
-    background-color: var(--dark);
+    background-color: var(--orange);
     font-weight: 300;
     padding: .5rem 1rem;
     margin: 0;
     margin-top: -.5rem;
 }
 
-h3 {
+h3{
     margin: 2rem 0 1rem;
 }
 
-h4 {
+h4{
     margin: 3rem 0 1rem;
 }
 
@@ -153,7 +182,7 @@ footer {
     .date {
         text-align: right;
         font-weight: 300;
-        color: var(--contrast);
+        color: var(--teal);
     }
 
     .role {
@@ -162,7 +191,7 @@ footer {
         text-align: right;
     }
 
-    #VA {
+    #VA{
         padding-top: 2rem;
     }
 }
@@ -170,33 +199,32 @@ footer {
 /* PC-skjermer */
 
 @media only screen and (min-width: 750px) {
-    #content {
+    main{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1.5fr 5fr;
         gap: 1rem;
     }
 
-    header {
+    #header{
         grid-column: 1/4;
         margin: 0;
         height: auto;
-    }
-
-    nav {
-        z-index: +2;
         grid-row: 1;
     }
+    
+    header{
+        z-index: +2;
+    }
 
-    #title {
+    #title{
         padding: 1rem 2rem;
     }
 
-    article {
+    article{
         margin: 0;
     }
 
-    #beer-pong {
+    #beer-pong{
         background-position: bottom center;
     }
 }
