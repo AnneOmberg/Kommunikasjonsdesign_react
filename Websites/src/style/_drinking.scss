@@ -1,0 +1,39 @@
+#drinkingTitle {
+    padding: 1rem 1rem;
+    color: var(--white);
+    margin: 0;
+    font-size: 2rem;
+    background-color: rgb(28, 27, 27, 0.7);
+}
+
+.gif{
+    // position: relative;
+    // z-index: +1;
+    background-color: black;
+    height: 100px;
+    width: 120px;
+    // background-image: url(../pictures/Drinking/group-image.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.background-parallax{
+    background-image: url(../pictures/Drinking/Asset\ 16.webp);
+    display: flex;
+    // background-color: black;
+    // height: 20vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 750px) {
+    #drink{
+        grid-template-rows: 1.5fr 5fr;
+    }
+}

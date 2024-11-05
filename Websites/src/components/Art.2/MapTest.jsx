@@ -102,15 +102,13 @@ export default function MapTest() {
                 index <= visibleMarkerIndex ? (
                 <Marker key={index} position={position.position} icon={circleIcon(8)}>
                     {/* <p>{index + 1}</p> */}
+                    <Popup>{position}</Popup>
                 </Marker>
                 ) : null
             )}
             </MapContainer>
         </div>
 
-
-
-        {/* Content below the map */}
         <section>
             {list.map((_, index) => (
             <div key={index} className='markers' id={`marker-${index}`}>

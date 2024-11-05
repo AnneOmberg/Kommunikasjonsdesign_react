@@ -17,7 +17,8 @@ import Early from './components/XL/Early'
 function App() {
   const [drinkTitle, setDrinkTitle] = useState("")
   const [jonasQuote, setJonasQuote] = useState("")
-  const [test, setTest] = useState("")
+  const [tollTitle, setTollTitle] = useState("")
+  const [tollQuote, setTollQuote] = useState("")
 
   // Smålig modifisert kode fra Copilot{
   useEffect(() => {
@@ -31,7 +32,7 @@ function App() {
       root.render(
         <>
           <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />
-          <Toll setTest={setTest} />
+          <Toll setTollTitle={setTollTitle} setTollQuote={setTollQuote} />
         </>
       )
 
@@ -64,10 +65,10 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route index element={<Home drinkTitle={drinkTitle} jonasQuote={jonasQuote} test={test} />} />
+        <Route index element={<Home drinkTitle={drinkTitle} jonasQuote={jonasQuote} tollTitle={tollTitle} tollQuote={tollQuote}/>} />
         <Route path="/drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />} />
         {/* <Route path="/toll" element={<Map/>} /> */}
-        <Route path="/toll" element={<Toll setTest={setTest} />} />
+        <Route path="/toll" element={<Toll setTollTitle={setTollTitle} setTollQuote={setTollQuote} />} />
         <Route path="/adhd" element={<RandomArticle />} />
           <Route path="adhd/late" element={<Late />} />
           <Route path="adhd/early" element={<Early />} />
