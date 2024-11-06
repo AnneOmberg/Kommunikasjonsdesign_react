@@ -34,16 +34,55 @@
     display: none;
 }
 
-.leaflet-marker-icon{
-    margin-left: -12px;
-    margin-top: -41px;
-    border: #232323 solid 2px;
-    border-radius: 10px;
+#textContent{
+    display: flex;
+    flex-direction: column;
+    gap: 100rem;
+    grid-column: 2 / 4;
+    grid-row: 3;
 }
 
-.leaflet-popup{
-    bottom: 20px;
-    left: -72px;
+.secondText {
+    // justify-content: center;
+    gap: 5rem !important;
+    // height: 200rem !important;
+}
+
+.textOverflow{
+    display: flex;
+    flex-direction: column;
+    gap: 25rem;
+    color: var(--white);
+    height: 200rem;
+    // grid-column: 2 / 4;
+    // grid-row: 3;
+    
+    .textOverlay{
+        background-color: var(--black);
+        position: sticky;
+        top: .5rem;
+        z-index: 100;
+        margin-top: 15vw;
+        margin-left: 19rem;
+        padding: 0.5rem 1rem;
+        font-size: larger;
+    }  
+    
+    #topText{
+        margin-bottom: 6.45rem;
+    }
+
+    #sit{
+        top: 10rem;
+    }
+
+    // #sita{
+    //     margin-bottom: 25rem;
+    // }
+
+    #secondText{
+        margin-bottom: 85rem;
+    }
 }
 
 .scrollContainer {
@@ -53,6 +92,7 @@
     overflow: hidden;
     padding-bottom: 20vh;
 }
+
 .scrollContainerDynamicBG {
     transition: background-image 2s;
     background-size: cover;

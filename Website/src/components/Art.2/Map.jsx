@@ -2,132 +2,126 @@ import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import {Icon} from 'leaflet'
 
 // Fixing default icon issue for Leaflet markers
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+import { list } from './TollList';
+import circle from '../../pictures/Toll/dot-outline.png'
 
-let DefaultIcon = L.icon({
-    iconUrl: markerIcon,
-    shadowUrl: markerShadow,
-});
-L.Marker.prototype.options.icon = DefaultIcon;
+// const circleIcon = new L.Icon ({
+//     iconUrl : './scr/pictures/Toll/Circle.png"',
+//     iconSize : [35,35], // size of the icon
+//     iconAnchor : [22,94], // point of the icon which will correspond to marker's location
+//     popupAnchor : [-3, -76] // point from which the popup should open relative to the iconAnchor
+//   })
+
+  function circleIcon (_iconSize){
+    return L.icon({
+        iconUrl: circle,
+        iconSize: _iconSize
+    })
+  }
+  
+  
+// let circleIcon = new L.Icon({
+//     iconUrl: 'Art.2/Bilder/Circle.png',
+// })
+// let DefaultIcon = L.icon({
+//     iconUrl: markerIcon,
+//     shadowUrl: markerShadow,
+// });
+// L.Marker.prototype.options.icon = DefaultIcon;
+// L.Marker.prototype.options.icon = circleIcon;
 
 export default function Map() {
-  const [visibleMarkerIndex, setVisibleMarkerIndex] = useState(0);
+  const [visibleMarkerIndex, setVisibleMarkerIndex] = useState(-1);
 
-  // Real marker coordinates (replace this array with your actual coordinates)
-  const markerCoordinates = [
-    { position: [59.225253, 10.916457], popup: "Marker 1: Rv. 110 – Seut" },
-    { position: [59.207374, 10.968305], popup: "Marker 2: Rv. 110 – Fredrikstadbrua øst" },
-    { position: [59.235725, 10.932217], popup: "Marker 3: Fv. 381 – Veumveien" },
-    { position: [59.243911, 10.981632], popup: "Marker 4: Fv. 109 – Råbekken" },
-    { position: [59.242653, 10.982024], popup: "Marker 5: Kv. – Dikeveien" },
-    { position: [59.239674, 10.991795], popup: "Marker 6: Kv. – Evjebekken" },
-    { position: [59.323444, 10.956405], popup: "Marker 7: Fv. 112 – Hauge bru" },
-    { position: [59.269294, 11.028108], popup: "Marker 8: Fv. 109 – Rolvsøysund" },
-    { position: [59.257960, 11.054326], popup: "Marker 9: Rv. 22 – Årum vest" },
-    { position: [59.232806, 11.054400], popup: "Marker 10: Fv. 107 – Vardeveien" },
-    { position: [59.214917, 11.083399], popup: "Marker 11: Fv. 130 – Skjærviken" },
-    { position: [59.271676, 11.129987], popup: "Marker 12: Rv. 22 – Hafslund syd" },
-    { position: [59.264743, 11.122296], popup: "Marker 13: Kv. Navestadveien" },
-    { position: [59.276222, 11.132943], popup: "Marker 14: Fv. 118 – Sarpsbru" },
-    { position: [59.295273, 11.064848], popup: "Marker 15: Fv. 114 – Grålum" },
-    { position: [59.296025, 11.069185], popup: "Marker 16: E6 – Rampeavkjøring Lekevoll fra sør" },
-    { position: [59.296672, 11.065751], popup: "Marker 17: E6 – Rampeavkjøring Lekevoll fra nord" },
-    { position: [59.305571, 11.042623], popup: "Marker 18: Fv. 118 – Kalnes" },
-    { position: [59.270763, 11.070972], popup: "Marker 19: Fv. 109 – Alvim vest" },
-    { position: [59.269200, 11.075840], popup: "Marker 20: Fv. 1168 – Alvimveien" },
-    { position: [59.276017, 11.084626], popup: "Marker 21: E6 – Rampeavkjøring Alvim fra nord" },
-    { position: [59.277506, 11.085907], popup: "Marker 22: E6 – Rampeavkjøring Alvim fra sør" },
-    { position: [59.293812, 11.075446], popup: "Marker 23: Kv. Tuneveien" },
-    { position: [59.250323, 11.014572], popup: "Marker 24: Fv. – Ny bru i Fredrikstad" }
-  ];
-
-  // Total scrollable height based on number of markers
-  const totalMarkers = markerCoordinates.length;
-  const totalScrollHeight = totalMarkers * 100; // Adjust the factor (100) for scroll sensitivity
-
-  const scrollListerner = () => {
-  const mapElement = document.getElementById("map");
-  const viewportHeight = window.innerHeight;
-  
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    const totalScrollableHeight = document.body.scrollHeight - viewportHeight; // Total scrollable height
-    console.log("Sroll høyde", totalScrollableHeight)
-
-    // Calculate how many markers to show based on the percentage of scroll completed
-    const percentageScrolled = scrollY / totalScrollableHeight;
-    const markerToShow = Math.min(
-      Math.floor(percentageScrolled * markerCoordinates.length),
-      markerCoordinates.length - 1
+  // Function to check if element is in viewport
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-    console.log("Prosent scroll", percentageScrolled)
-    
-    setVisibleMarkerIndex(markerToShow);
-    console.log("Markør", markerToShow)
-  };
-  
-  const onScroll = () => {
-    const mapRect = mapElement.getBoundingClientRect();
-    // console.log(mapRect)
-    // Start handleScroll only when the map hits the top of the viewport
-    if (mapRect.top <= 0) {
-      handleScroll();
-    }
   }
 
-  addEventListener('scroll', onScroll);
-  
-  return () => {
-    removeEventListener('scroll', onScroll);
-  };
-};
+  function isOutOfViewportFromBottom(el) {
+    const rect = el.getBoundingClientRect();
+        return rect.top > (window.innerHeight || document.documentElement.clientHeight);
+  }
 
-  useEffect(() => {
-   scrollListerner()
-  }, [totalMarkers, totalScrollHeight]);
+    const handleScroll = () => {
+        const marker0 = document.getElementById('marker-0');
 
-  return (
-    <>
-      {/* Fullscreen Fixed Map */}
-      <div id="mapcontainer" style={{ height: '100vh', width: '100%' }}>
-        <MapContainer
-          center={[59.269294, 11.028108]} // Initial center of the map
-          zoom={11}
-          scrollWheelZoom={false} // Disable scroll zooming
-          dragging={false}        // Disable dragging
-          style={{ height: '100%', width: '100%' }} // Fullscreen map
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
+        if (marker0 && isOutOfViewportFromBottom(marker0)) {
+            setVisibleMarkerIndex(-1);
+        } else {
+            list.map((_, index) => {
+                const element = document.getElementById(`marker-${index}`);
+                if (element && isInViewport(element)) {
+                    setVisibleMarkerIndex(index);
+                }
+            });
+        }
+    };
 
-          {markerCoordinates.map((position, index) =>
-            index <= visibleMarkerIndex ? (
-              <div id={index}>
-                <Marker key={index} position={position.position}>
-                  <Popup>{position.popup}</Popup>
-                { console.log("Kordinater", position)}
+window.addEventListener('scroll', handleScroll, { passive: true });
 
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     }; 
+    // }
+
+    useEffect(() => {
+        scroll()
+    }, [list]);
+
+    console.log(visibleMarkerIndex)
+
+    return (
+        <>
+        {/* Fullscreen Fixed Map */}
+        
+        {/* <section id='Text-Overflow'>
+        <p id='Top-Text'>Siden 20. mars 2024 har de 23 bomstasjonene i Sarpsborg og Fredrikstad krevd inn bompenger fra bilister. Hensikten er å finansiere Bypakke Nedre Glomma, et prosjekt for å forbedre infrastruktur, veier og kollektivtilbudet i området. Likevel opplever flere innbyggere, som Einar Kjell Nilsen (62), at bompengene og tilhørende prosjekter er unødvendige eller belastende.</p>
+        </section> */}
+
+        <div id="mapcontainer" style={{ height: '100vh', width: '100%' }}>
+            <MapContainer
+            center={[59.269294, 11.028108]}
+            zoom={11}
+            scrollWheelZoom={false}
+            dragging={false}
+            doubleClickZoom={false}
+            style={{ height: '100%', width: '100%' }}
+            >
+            <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+
+            {list.map((position, index) =>
+                index <= visibleMarkerIndex ? (
+                <Marker key={index} position={position.position} icon={circleIcon(15)}>
+                    {/* <p>{index + 1}</p> */}
+                    <Popup>Nr.{index + 1}: {position.toll}</Popup>
                 </Marker>
-              </div>
-            ) : null
-          )}
-        </MapContainer>
-      </div>
+                ) : null
+            )}
+            </MapContainer>
+        </div>
 
-      {/* Content above the map */}
-      <div style={{ backgroundColor: '#f0f0f0', padding: '20px' }}>
-        <h1>Scroll to see the markers appear on the map</h1>
-      </div>
-      
-      {/* Content below the map */}
-      <div style={{ height: '100vh', backgroundColor: '#d3d3d3', padding: '20px' }}>
-        <h1>This is some content below the map</h1>
-      </div> 
-    </>
-  );
+        <section>
+            {list.map((_, index) => (
+            <div key={index} className='markers' id={`marker-${index}`}>
+                <h2>Markør {index + 1}:  <br /> {_.toll} </h2>
+            </div>
+            ))}
+        </section>
+        </>
+    );
 }
