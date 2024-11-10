@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { list } from "./TollList";
 import Map from "./Map";
-import MapTest from "./MapTest";
+// import MapTest from "./MapTest";
 
 export default function Toll({ setTollTitle, setTollQuote }) {
 
@@ -46,11 +46,12 @@ export default function Toll({ setTollTitle, setTollQuote }) {
                         <h3></h3>
                         <p>Hun kjører ofte omveier for å unngå bommene og planlegger turer til andre byer som Halden for å handle.</p>
                         
-                        <p>Siden 20. mars 2024 har de 23 bomstasjonene i Sarpsborg og Fredrikstad krevd inn bompenger fra bilister. Hensikten er å finansiere Bypakke Nedre Glomma, et prosjekt for å forbedre infrastruktur, veier og kollektivtilbudet i området. Likevel opplever flere innbyggere, som Einar Kjell Nilsen (62), at bompengene og tilhørende prosjekter er unødvendige eller belastende.</p>
+                        {/* <p>Siden 20. mars 2024 har de 23 bomstasjonene i Sarpsborg og Fredrikstad krevd inn bompenger fra bilister. Hensikten er å finansiere Bypakke Nedre Glomma, et prosjekt for å forbedre infrastruktur, veier og kollektivtilbudet i området. Likevel opplever flere innbyggere, som Einar Kjell Nilsen (62), at bompengene og tilhørende prosjekter er unødvendige eller belastende.</p>
                         <p className="sitat">-	Bompengene er sure penger som ikke går til noen ting, sier Nilsen, som oppgir å passere bomringen omtrent ti ganger i uken, blant annet for å besøke familie i Fredrikstad.</p>
                         <p>For en bilist med bensin- eller dieselbil uten bombrikke utgjør dette en månedlig kostnad på rundt 1280 kroner, noe som kan gjøre selv enkle ærender kostbare.</p>
 
-                        <p className="sitat">-	Regningen kommer hele tiden, og flere har gått til inkasso. Når man ikke klarer å betale, blir bombrikken stengt, og man får ikke lenger 20 % rabatt på passeringene. Da må man betale full pris, og det blir en slags ond sirkel, sier Gitte Yvonne Bjørndal Olsen.</p>
+                        <p className="sitat">-	Regningen kommer hele tiden, og flere har gått til inkasso. Når man ikke klarer å betale, blir bombrikken stengt, og man får ikke lenger 20 % rabatt på passeringene. Da må man betale full pris, og det blir en slags ond sirkel, sier Gitte Yvonne Bjørndal Olsen.</p> */}
+
                         <p>Både Olsen og Nilsen påpeker at kostnadene ved bomringene særlig rammer de med lavere inntekt, som uføre og pensjonister, eller småbarnsfamilier som må kjøre barna til aktiviteter.</p>
 
                         <p className="sitat">-	De som styrer Sarpsborg vet ikke hvordan det er å sitte med tom lommebok, og istedenfor å se mennesker ser de tall, sier Olsen.</p>
@@ -58,21 +59,6 @@ export default function Toll({ setTollTitle, setTollQuote }) {
                         
                         <p className="sitat">-	Det er totalen som er viktig for Bypakke Nedre Glomma, det statlige nullvekstmålet og de kommende utbyggingsprosjektene, står det på deres nettside.</p>
                     </article>
-            {/* <p>Bomstasjoner</p>
-            <ol id="List">
-                {list?.map((tolls, index) => (
-                    <li key={index}>{tolls.toll}</li>
-                    // console.log(tolls.toll)
-                ))}
-            </ol>
-            <p>Notes:
-                Bomstasjonskart Bypakke Nedre Glomma fase 2. Oppstart januar 2024.
-                Pilene indikerer innkrevingsretningen.
-
-                S1, S2 = Stengte veier
-                K1, K2 = Bomstasjoner Værstebrua og Kråkerøybrua
-
-                For mer informasjon se bypakkenedreglomma.no eller bompengekalkulator.</p>  */}
                 </section>
             </main>
         </>

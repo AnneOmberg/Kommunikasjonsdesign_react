@@ -1,9 +1,7 @@
 #mapcontainer{
     position: sticky;
     top: 0;
-    // position: relative;
     height: 100vh;
-    // z-index: -1;
 }
 
 #map{
@@ -43,9 +41,7 @@
 }
 
 .secondText {
-    // justify-content: center;
     gap: 5rem !important;
-    // height: 200rem !important;
 }
 
 .textOverflow{
@@ -54,11 +50,10 @@
     gap: 25rem;
     color: var(--white);
     height: 200rem;
-    // grid-column: 2 / 4;
-    // grid-row: 3;
     
     .textOverlay{
         background-color: var(--black);
+        margin-right: 1rem;
         position: sticky;
         top: .5rem;
         z-index: 100;
@@ -75,10 +70,6 @@
     #sit{
         top: 10rem;
     }
-
-    // #sita{
-    //     margin-bottom: 25rem;
-    // }
 
     #secondText{
         margin-bottom: 85rem;
