@@ -1,113 +1,165 @@
+#bom, .secondText{
+    margin: 3rem 3rem 0 3rem;
+}
+
 #mapcontainer{
     position: sticky;
     top: 0;
     height: 100vh;
 }
 
-#map{
-    grid-column: 1/4;
-    grid-row: 3;
-}
-
 .markers{
     display: table;
     padding: .5rem 1rem;
-    margin-top: 50vh;
     position: sticky;
     z-index: 1000;
     color: var(--white);
     background-color: var(--black);
-    margin-left: 1rem;
+    margin: 50vh 1rem 0rem;
+
+    h2{
+        font-size: 1.25rem;
+    }
 }
 
 #marker-0{
     margin-top: 25vh;
 }
 
-#marker-23{
-    margin-bottom: 100vh;
-}
-
 .leaflet-control-container{
     display: none;
 }
 
-#textContent{
-    display: flex;
-    flex-direction: column;
-    gap: 100rem;
-    grid-column: 2 / 4;
-    grid-row: 3;
-}
-
-.secondText {
-    gap: 5rem !important;
-}
-
-.textOverflow{
-    display: flex;
-    flex-direction: column;
-    gap: 25rem;
-    color: var(--white);
-    height: 200rem;
-    
-    .textOverlay{
-        background-color: var(--black);
-        margin-right: 1rem;
-        position: sticky;
-        top: .5rem;
-        z-index: 100;
-        margin-top: 15vw;
-        margin-left: 19rem;
-        padding: 0.5rem 1rem;
-        font-size: larger;
-    }  
-    
-    #topText{
-        margin-bottom: 6.45rem;
-    }
-
-    #sit{
-        top: 10rem;
-    }
-
-    #secondText{
-        margin-bottom: 85rem;
-    }
-}
-
-.scrollContainer {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 20vh;
-}
-
-.scrollContainerDynamicBG {
-    transition: background-image 2s;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.scrollText {
-    max-width: 50rem;
-    padding: 2rem;
-    background: #fff;
-    color: #232323;
-    font-family: 'Fira Sans', sans-serif;
-    margin: 30rem auto;
-}
-
-.textBlock {
-    max-width: 50rem;
-    margin: 0 auto;
+.topText, #buttom{
+    margin: 0  3rem 3rem 3rem;
 }
 
 @media only screen and (min-width: 750px) {
+    #buttom{
+        grid-column: 2;
+    }
+
+    #map{
+        grid-column: 1/4;
+    }
+
     #toll{
-        grid-template-rows: auto auto auto;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 1rem;
+    }
+    
+    #buttom{
+        grid-row: 4;
+    }
+    
+    #mapcontainer{
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+    
+    #map{
+        grid-row: 3;
+    }
+    
+    .markers{
+        display: table;
+        padding: .5rem 1rem;
+        margin-top: 50vh;
+        position: sticky;
+        z-index: 1000;
+        color: var(--white);
+        background-color: var(--black);
+        margin-left: 1rem;
+
+        h2{
+            font-size: 1.5em !important;
+        }
+    }
+    
+    #marker-0{
+        margin-top: 25vh;
+    }
+    
+    #marker-23{
+        margin-bottom: 100vh;
+    }
+    
+    .textContent{
+        display: flex;
+        flex-direction: column;
+        gap: 100rem;
+        grid-column: 2 / 4;
+        grid-row: 3;
+    }
+    
+    .secondText {
+        gap: 5rem !important;
+    }
+    
+    .topText, .secondText{
+        margin: 0 !important;
+    }
+
+
+    .textOverflow{
+        display: flex;
+        flex-direction: column;
+        gap: 25rem;
+        color: var(--white);
+        height: 200rem;
+
+        
+        .textOverlay{
+            background-color: var(--black);
+            margin-right: 1rem;
+            position: sticky;
+            top: .5rem;
+            z-index: 100;
+            margin-top: 15vw;
+            margin-left: 19rem;
+            padding: 0.5rem 1rem;
+            font-size: larger;
+        }  
+        
+        #topText{
+            margin-bottom: 72rem;
+        }
+    
+        #secondText{
+            margin-bottom: 85rem;
+        }
+    }
+    
+    .scrollContainer {
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 20vh;
+    }
+    
+    .scrollContainerDynamicBG {
+        transition: background-image 2s;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .scrollText {
+        max-width: 50rem;
+        padding: 2rem;
+        background: #fff;
+        color: #232323;
+        font-family: 'Fira Sans', sans-serif;
+        margin: 30rem auto;
+    }
+    
+    .textBlock {
+        max-width: 50rem;
+        margin: 0 auto;
     }
 }
