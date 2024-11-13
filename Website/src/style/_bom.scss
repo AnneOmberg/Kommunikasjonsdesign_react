@@ -98,7 +98,7 @@
     }
     
     .secondText {
-        gap: 5rem !important;
+        gap: 55rem !important;
     }
     
     .topText, .secondText{
@@ -109,9 +109,9 @@
     .textOverflow{
         display: flex;
         flex-direction: column;
-        gap: 25rem;
+        gap: 75rem;
         color: var(--white);
-        height: 200rem;
+        height: 250rem;
 
         
         .textOverlay{
