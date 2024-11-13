@@ -8,7 +8,7 @@ export default function Toll({ setTollTitle, setTollQuote }) {
     //FUNCTION TO CHECK IF ELEMENT IS IN VIEWPOR
     useEffect(() => {
         const toll = document.getElementById("tollTitle")?.innerText
-        const quote = document.getElementById("Jonas")?.innerText
+        const quote = document.getElementById("tollQuote")?.innerText
         setTollTitle(toll)
         setTollQuote(quote)
     }, [setTollTitle, setTollQuote])
@@ -16,14 +16,14 @@ export default function Toll({ setTollTitle, setTollQuote }) {
     return (
         <>
             <main id="toll">
-                <section id="header">
-                    <h1 id="tollTitle">Bomringer i hverdagen: <br />Kostnaden for å krysse bygrensene</h1>
-                    <p className="photographer">Foto: Jenny Østreng</p>
+                <section className="header tollHeader">
+                    <h1 className="title" id="tollTitle">Bomringer i hverdagen: <br />Kostnaden for å krysse bygrensene</h1>
+                    <p className="photographer">!!!</p>
                 </section>
                 <section id="content">
                     <article id="bom">
-                        <section id="top">                        
-                            <p className="sitat" id="Jonas">-	De som styrer Sarpsborg vet ikke hvordan det er å sitte med tom lommebok, og istedenfor å se mennesker ser de tall, sier Gitte Yvonne Bjørndal Olsen (55) fra Sarpsborg.</p>
+                        <section id="top">
+                            <p className="sitat topQuote" id="tollQuote">-	De som styrer Sarpsborg vet ikke hvordan det er å sitte med tom lommebok, og istedenfor å se mennesker ser de tall, sier Gitte Yvonne Bjørndal Olsen (55) fra Sarpsborg.</p>
                             <p>For mange i Sarpsborg og Fredrikstad har bompenger blitt en stor utgift i hverdagen. Vi har snakket med flere som må krysse bomringen daglig – til jobb, familie og fritid – og som føler bompengene påvirker både økonomi og livskvalitet.</p>
                             
                             <p className="sitat">-	Det er en regning som kommer på toppen av alt annet, som man egentlig aldri har råd til, sier Gitte Yvonne Bjørndal Olsen (55) fra Sarpsborg.</p>

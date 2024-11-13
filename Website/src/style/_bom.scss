@@ -1,3 +1,8 @@
+.tollHeader{
+    background-image: url(../pictures/Toll/Bom.jpeg);
+    background-position: top;
+}
+
 #bom, .secondText{
     margin: 3rem 3rem 0 3rem;
 }
@@ -44,10 +49,7 @@
     }
 
     #toll{
-        display: grid;
         grid-template-rows: auto auto auto auto;
-        grid-template-columns: 1fr 2fr 1fr;
-        gap: 1rem;
     }
     
     #buttom{
@@ -125,7 +127,8 @@
         }  
         
         #topText{
-            margin-bottom: 72rem;
+            margin-bottom: 55rem;
+            margin-top: 100vh;
         }
     
         #secondText{

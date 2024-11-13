@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 
-export default function Drinking({ setDrinkTitle, setJonasQuote }) {
+export default function Drinking({ setDrinkTitle, setDrinkQuote }) {
 
     useEffect(() => {
-        const drinkingTitle = document.getElementById("drinkingTitle")?.innerText
-        const quote = document.getElementById("Jonas")?.innerText
-        setDrinkTitle(drinkingTitle)
-        setJonasQuote(quote)
-    }, [setDrinkTitle, setJonasQuote])
+        const drinking = document.getElementById("drinkTitle")?.innerText
+        const quote = document.getElementById("drinkQuote")?.innerText
+        setDrinkTitle(drinking)
+        setDrinkQuote(quote)
+    }, [setDrinkTitle, setDrinkQuote])
 
     //Data for drikke-animasjon     
     //https://studenthelse.no/shot-2022/rusmidler/
@@ -15,14 +15,14 @@ export default function Drinking({ setDrinkTitle, setJonasQuote }) {
 
     return (
         <main id="drink">
-            <section id="header">
-                <h1 id="drinkingTitle">Drikkingens dilemma: <br /> Hvordan former alkohol studentmiljøet?</h1>
+            <section className="header drinkHeader">
+                <h1 className="title" id="drinkTitle">Drikkingens dilemma: <br /> Hvordan former alkohol studentmiljøet?</h1>
                 <p className="photographer">Foto: Jenny Østreng</p>
             </section>
 
             <section id="content">
                 <article id="drinking">
-                    <p className="sitat" id="Jonas">- Jeg synes det er litt leit at det alltid er alkohol med i bildet når man skal finne på noe med andre studenter, sier Jonas Heggelund (24), student ved Høgskolen i Østfold</p>
+                    <p className="sitat topQuote" id="drinkQuote">- Jeg synes det er litt leit at det alltid er alkohol med i bildet når man skal finne på noe med andre studenter, sier Jonas Heggelund (24), student ved Høgskolen i Østfold</p>
 
                     <figure>
                         <img src="./src/pictures/Drinking/man-drink.PNG" alt="kollektiv-bilde" />

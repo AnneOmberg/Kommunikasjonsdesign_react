@@ -10,13 +10,13 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import Drinking from './components/Art.1/Drinking'
 import Toll from './components/Art.2/Toll'
-import RandomArticle from './components/XL/RandomArticle'
-import Late from './components/XL/Late'
-import Early from './components/XL/Early'
+import RandomArticle from './components/ADHD/RandomArticle'
+import Late from './components/ADHD/Late'
+import Early from './components/ADHD/Early'
 
 function App() {
   const [drinkTitle, setDrinkTitle] = useState("")
-  const [jonasQuote, setJonasQuote] = useState("")
+  const [drinkQuote, setDrinkQuote] = useState("")
   const [tollTitle, setTollTitle] = useState("")
   const [tollQuote, setTollQuote] = useState("")
 
@@ -31,7 +31,7 @@ function App() {
       const root = ReactDOM.createRoot(hiddenDiv)
       root.render(
         <>
-          <Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />
+          <Drinking setDrinkTitle={setDrinkTitle} setDrinkQuote={setDrinkQuote} />
           <Toll setTollTitle={setTollTitle} setTollQuote={setTollQuote} />
         </>
       )
@@ -65,8 +65,8 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route index element={<Home drinkTitle={drinkTitle} jonasQuote={jonasQuote} tollTitle={tollTitle} tollQuote={tollQuote}/>} />
-        <Route path="/drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setJonasQuote={setJonasQuote} />} />
+        <Route index element={<Home drinkTitle={drinkTitle} drinkQuote={drinkQuote} tollTitle={tollTitle} tollQuote={tollQuote}/>} />
+        <Route path="/drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setDrinkQuote={setDrinkQuote} />} />
         {/* <Route path="/toll" element={<Map/>} /> */}
         <Route path="/toll" element={<Toll setTollTitle={setTollTitle} setTollQuote={setTollQuote} />} />
         <Route path="/adhd" element={<RandomArticle />} />
