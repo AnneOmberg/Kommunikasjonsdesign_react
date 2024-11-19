@@ -3,6 +3,8 @@
 @import url('./_drinking.scss');
 @import url('./_bom.scss');
 @import url('./_adhd.scss');
+@import url('./_late.scss');
+@import url('./_early.scss');
 
 body{
     margin: 0;
@@ -240,7 +242,7 @@ footer {
         padding: 1rem 2rem;
     }
 
-    article{
+    article, #buttom{
         margin: 0 !important;
     }
 

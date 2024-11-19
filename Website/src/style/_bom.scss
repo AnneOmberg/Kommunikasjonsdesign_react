@@ -3,8 +3,16 @@
     background-position: top;
 }
 
-#bom, .secondText{
+#bom{
     margin: 3rem 3rem 0 3rem;
+}
+
+.secondText, .topText{
+    margin: 0 3rem;
+}
+
+#p-sit{
+    margin: 0;
 }
 
 #mapcontainer{
@@ -35,15 +43,11 @@
     display: none;
 }
 
-.topText, #buttom{
+#buttom{
     margin: 0  3rem 3rem 3rem;
 }
 
 @media only screen and (min-width: 750px) {
-    #buttom{
-        grid-column: 2;
-    }
-
     #map{
         grid-column: 1/4;
     }
@@ -54,6 +58,7 @@
     
     #buttom{
         grid-row: 4;
+        grid-column: 2;
     }
     
     #mapcontainer{
@@ -109,7 +114,7 @@
     .textOverflow{
         display: flex;
         flex-direction: column;
-        gap: 75rem;
+        gap: 45rem;
         color: var(--white);
         height: 250rem;
 
@@ -127,7 +132,7 @@
         }  
         
         #topText{
-            margin-bottom: 55rem;
+            margin-bottom: 72rem;
             margin-top: 100vh;
         }
     
