@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { data } from "./data";
 
-export default function RandomArticle() {
+export default function RandomArticle({ setAdhdTitle, setAdhdQuote }) {
+
+        useEffect(() => {
+            const adhd = document.getElementById("adhdTitle")?.innerText
+            const quote = document.getElementById("adhdQuote")?.innerText
+            setAdhdTitle(adhd)
+            setAdhdQuote(quote)
+        }, [setAdhdTitle, setAdhdQuote])
+    
     const viewPoint = ["late", "early"];
     const [randomChoise, setRandomChoise] = useState("");
 
@@ -24,18 +32,11 @@ export default function RandomArticle() {
                 <h1 className="title" id="adhdTitle">ADHD-diagnose:<br />Hva betyr tidspunktet?</h1>
             </section>
             <section id="content">
-                <article>
+                <article id="top">
                     <p>Mellom 2008 og 2013 var 4,3 % av gutter og 1,7 % av jenter i alderen 6–17 år registrert med en ADHD-diagnose i Norsk pasientregister, ifølge en rapport fra Folkehelseinstituttet (FHI) fra 2016. De fleste får diagnosen tidlig i skolealder, og FHI beskriver tidlig intervensjon som avgjørende for å gi barn bedre forutsetninger i livet. Likevel er det mange barn som ikke fanges opp av spesialisthelsetjenesten, noe som bidrar til underdiagnostisering – særlig blant jenter.</p>
-                    <figure>
-                        <img src="./src/pictures/ADHD/Tora.jpg" alt="Bilde av Tora" />
-                        <p className="photo-text">
-                        Dette er det første Tora Murtnes-Hatlestad (30) hadde å si da hun fikk spørsmål om hverdagen før hun fikk diagnosen. Hun fikk diagnosen i en alder av 29 år, og det var ingen som hadde mistenkt at hun kunne ha diagnosen før nå.
-                        </p>
-                        <figcaption className="photographer">
-                            Foto: Jenny Østreng
-                        </figcaption>
-                    </figure>
+                </article>
 
+                <article id="under">
                     <p>
                         Statistikk viser en klar skjevfordeling mellom kjønnene: Mens 4,3 % av guttene i skolealder ble diagnostisert i perioden, gjaldt det samme kun 1,7 % av jentene. Denne ubalansen er ikke unik for Norge – internasjonal forskning peker på at gutters ADHD-symptomer ofte er mer synlige, preget av impulsivitet, hyperaktivitet og utagerende atferd. Jenter derimot kan ha mer subtile symptomer, noe som gjør dem lettere å overse.
                     </p>
@@ -52,7 +53,7 @@ export default function RandomArticle() {
                     </p>
                     <img src="" alt="" />
                 </article>
-                <section>
+                <section id="btn">
                     <button id="Knapp" onClick={handleBtn}>Choose Story</button>
                     {randomChoise && (
                         <section>

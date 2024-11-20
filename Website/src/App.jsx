@@ -13,17 +13,22 @@ import Toll from './components/Art.2/Toll'
 import RandomArticle from './components/ADHD/RandomArticle'
 import Late from './components/ADHD/Late'
 import Early from './components/ADHD/Early'
+import Rob from './components/Art.3/Rob'
 
 function App() {
   const [drinkTitle, setDrinkTitle] = useState("")
   const [drinkQuote, setDrinkQuote] = useState("")
   const [tollTitle, setTollTitle] = useState("")
   const [tollQuote, setTollQuote] = useState("")
+  const [robTitle, setRobTitle] = useState("")
+  const [robQuote, setRobQuote] = useState("")
+  const [adhdTitle, setAdhdTitle] = useState("")
+  const [adhdQuote, setAdhdQuote] = useState("")
 
   // Smålig modifisert kode fra Copilot{
   useEffect(() => {
     // Dynamically import the Drinking component and extract the title
-    import('./components/Art.1/Drinking' && './components/Art.2/Toll').then(({ }) => {
+    import('./components/Art.1/Drinking' && './components/Art.2/Toll' && './components/Art.3/Rob' &&'./components/ADHD/RandomArticle').then(({ }) => {
       const hiddenDiv = document.createElement('div')
       document.body.appendChild(hiddenDiv)
 
@@ -33,6 +38,8 @@ function App() {
         <>
           <Drinking setDrinkTitle={setDrinkTitle} setDrinkQuote={setDrinkQuote} />
           <Toll setTollTitle={setTollTitle} setTollQuote={setTollQuote} />
+          <Rob setRobTitle={setRobTitle} setRobQuote={setRobQuote} />
+          <RandomArticle setAdhdTitle={setAdhdTitle} setAdhdQuote={setAdhdQuote} />
         </>
       )
 
@@ -65,11 +72,12 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route index element={<Home drinkTitle={drinkTitle} drinkQuote={drinkQuote} tollTitle={tollTitle} tollQuote={tollQuote}/>} />
+        <Route index element={<Home drinkTitle={drinkTitle} drinkQuote={drinkQuote} tollTitle={tollTitle} tollQuote={tollQuote} robTitle={robTitle} robQuote={robQuote} adhdTitle={adhdTitle} adhdQuote={adhdQuote}/>} />
         <Route path="/drinking" element={<Drinking setDrinkTitle={setDrinkTitle} setDrinkQuote={setDrinkQuote} />} />
         {/* <Route path="/toll" element={<Map/>} /> */}
         <Route path="/toll" element={<Toll setTollTitle={setTollTitle} setTollQuote={setTollQuote} />} />
-        <Route path="/adhd" element={<RandomArticle />} />
+        <Route path="/rob" element={<Rob setRobTitle={setRobTitle} setRobQuote={setRobQuote} />} />
+        <Route path="/adhd" element={<RandomArticle setAdhdTitle={setAdhdTitle} setAdhdQuote={setAdhdQuote} />} />
           <Route path="adhd/late" element={<Late />} />
           <Route path="adhd/early" element={<Early />} />
 

@@ -1,27 +1,25 @@
 import { Link } from "react-router-dom";
 
-export default function Home({drinkTitle, drinkQuote, tollTitle, tollQuote}){
+export default function Home({drinkTitle, drinkQuote, tollTitle, tollQuote, robTitle, robQuote, adhdTitle, adhdQuote}){
     return(
         <>
 
             <main id="Front-page">
                 <h1>Siste nytt!</h1>
+
                     <article id="XL">
                 <Link to="/adhd">
-                        <h2>Diagnosering som voksen</h2>
+                        <h2>{adhdTitle}</h2>
                         <img src="#" alt="#"/>
-                        <p>Mennesker som hører stemmer i sine hoder, kan f.eks. ha schizofreni. Og de som har storslåtte ideer - som tror de er Jesus eller konge - kan ha en form for manisk-depressiv (bipolar) sykdom.
-
-                        Men oftere er svaret mindre klart. Hvis du ikke kan holde en tale, betyr det at du har en sykdom (panikklidelse ?) eller at det bare er "nerver"? Hvis du er lei deg og er mismodig, betyr det bare at du er litt utafor, eller har du en depresjon som du kanskje trenger behandling for?
-                        
-                        Så, hva er normalt?</p>
+                        <p>{adhdQuote}</p>
                 </Link>
                     </article>
 
                     <article id="L">
-                <Link>
+                <Link to="rob">
                         <img src="#" alt="#"/>
-                        <h3>Artikkel-3</h3>
+                        <h3>{robTitle}</h3>
+                        <p>{robQuote}</p>
                 </Link>
                     </article>
                 

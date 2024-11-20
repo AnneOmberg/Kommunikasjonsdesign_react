@@ -32,18 +32,24 @@
     img{
         width: 100%;
         align-self: center;
-        border-radius: 5px 5px 0 0;
+        border-radius: 4px 4px 0 0;
     }
     
     h2{
-        padding: 20px 5px;
+        padding: 20px 10px;
+        border-radius: 4px 4px 0 0
+        
     }
-    
+
     h3, h2{
         margin: 0;
-        padding: 10px 5px;
+        // padding: 10px 5px;
         color: var(--white);
         background-color: var(--orange);
+    }
+
+    h3{
+        padding: 10px 5px;
     }
 }
 
@@ -72,7 +78,7 @@
     
         #L{
             grid-column: 1;
-            grid-row: 3/5;
+            grid-row: 3;
         }
     
         #M{

@@ -1,4 +1,40 @@
-.lateHeader{
-    background-image: url(../pictures/ADHD/Half-Brain.jpg);
-    background-position: center;
+#late{
+    .lateHeader{
+        background-image: url(../pictures/ADHD/Half-Brain.jpg);
+        background-position: center;
+    }
+
+    .services {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .text-box {
+        width: 20rem;
+        position: absolute;
+        bottom: 100%; /* Position above the word */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+
+        a{
+            color: var(--teal);
+            text-decoration: underline;
+        }
+    }
+    
+    .services:hover .text-box {
+        visibility: visible;
+        opacity: 1;
+    }
+
 }
