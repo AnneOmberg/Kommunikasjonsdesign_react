@@ -8,7 +8,7 @@ export default function Early() {
 
             <section id="content">
                 <article id="sent">
-                    <p className="sitat topQuote" id="lateQuote">. – Jeg hadde store utfordringer med å konsentrere meg, spesielt når det kom til skolen. Jeg slet mye, men i etterkant har jeg forstått hvorfor, forteller Tuva.</p>
+                    <p className="sitat topQuote" id="lateQuote">– Jeg hadde store utfordringer med å konsentrere meg, spesielt når det kom til skolen. Jeg slet mye, men i etterkant har jeg forstått hvorfor, forteller Tuva.</p>
 
                     <p>Tuva Cecilie Fjeld (28) ble diagnostiert med ADHD da hun var rundt seks år gammel, etter at lærerne på skolen oppdaget tegn og tilkalte <span className="services">PPT <span className="text-box">Står for pedagogisk-psykologisk tjeneste, som hjelper barnehager og skoler med å legge til rette for barn og elever med behov for tilrettelegging. <a href="https://www.udir.no/laring-og-trivsel/spesialpedagogikk/pp-tjenesten/">(Udir)</a></span></span>. For den lille jenta var hverdagen før diagnosen preget av mye stress og frustrasjon, særlig knyttet til lære- og skrivevansker. </p>
 
@@ -48,7 +48,7 @@ export default function Early() {
                     <p className="sitat">- Jeg merker jo sånn som med jobb at jeg ikke er fokusert i det hele tatt, det er tusen tanker oppi hodet, noen ganger så klarer jeg ikke jobbe i det hele tatt, det blir for mye for meg, av at det er for mye som skjer på en gang. Nå har jeg jo begynt på medisiner igjen, og det føles mye bedre, forteller hun.</p>
 
                     <h4>Tidlig diagnose – en blandet opplevelse</h4>
-                    <p>Tuva fikk ADHD-diagnosen i ung alder, noe hun i dag ser på som en fordel. </p>
+                    <p>Tuva fikk ADHD-diagnosen i ung alder, noe hun i dag ser på som en fordel.</p>
                     !!!<p className="sitat">- Jeg tror det hadde vært kjedeligere for meg å finne det ut senere, fordi jeg var såpass ung. Tidligere hadde ikke gjort noen stor forskjell ettersom jeg ikke hadde husket så mye da uansett.</p>
 
                     <p>Samtidig var det ikke uten kostnader å være den eneste i klassen med en ADHD-diagnose. </p>

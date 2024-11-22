@@ -24,24 +24,24 @@ export default function Rob({ setRobTitle, setRobQuote }) {
                 <article id="rob">
                     <p className="sitat topQuote" id="robQuote">“Pappa det er noen som truer oss med kniv!”</p>
 
-                    <figure>
-                        <img src="./src/pictures/Drinking/man-drink.PNG" alt="kollektiv-bilde" />
-                        <p className="photo-text">
-                            Jonas Heggelund er lei av at studentene alltid drikker alkohol ved sosiale anledninger.
-                        </p>
-                        <figcaption className="photographer">
-                            Foto: Jenny Østreng
-                        </figcaption>
-                    </figure>
-
-                    <h3>Søndag 23. august 2020 i Vestby:</h3>
+                    <h4>Søndag 23. august 2020 i Vestby:</h4>
                     <p>
                     En rolig kveldstur med hundene tok en dramatisk vending for to ungdommer da de ble utsatt for et knivran i et industriområde i Vestby. Den mistenkte, som allerede var kjent for lignende hendelser, ble raskt pågrepet takket være snarrådige handlinger fra ofrene og deres pårørende.
                     </p>
 
+                    <figure>
+                        <img src="./src/pictures/Rob/Line_Oda.png" alt="Bilde av Line og Oda" />
+                        <p className="photo-text">
+                            Lengst frem står Line-Aurora Herberg Thorvaldsen (17) med Oda Randem-Hansel (17) i bakgrunn
+                        </p>
+                        <figcaption className="photographer">
+                            Foto: Line-Aurora Herberg Thorvaldsen
+                        </figcaption>
+                    </figure>
+
                     <h4>Planlagt tur endte i dramatikk</h4>
                     <p>
-                    Det var en varm ettermiddag da Line Aurora Herberg-Thorvaldsen (17) bestemte seg for å ta en tur med hunden. Hun avtalte å møte venninnen Oda Randem-Hansel (17) ved "Vanntårnet", som ligger på halvveien mellom jentenes hjem. Selv om Lines mor hadde advart henne om å være forsiktig på grunn av nylige ran i området, følte Line seg trygg i det solfylte været.
+                    Det var en varm ettermiddag da Line-Aurora Herberg Thorvaldsen (17) bestemte seg for å ta en tur med hunden. Hun avtalte å møte venninnen Oda Randem-Hansel (17) ved "Vanntårnet", som ligger på halvveien mellom jentenes hjem. Selv om Lines mor hadde advart henne om å være forsiktig på grunn av nylige ran i området, følte Line seg trygg i det solfylte været.
                     </p>
                     <p>På vei til vanntårnet ble Line sneiet av en merkelig mann på sykkel, men hun tenkte ikke noe mer over det. Annet enn dette startet turen uten problemer, men etter kort tid la Line merke til den samme mannen på sykkel som oppførte seg merkelig. Han syklet mot dem på den øde gangvei bak noen industribygg, en rute som sjelden brukes av andre.</p>
 
@@ -53,9 +53,9 @@ export default function Rob({ setRobTitle, setRobQuote }) {
                     </p>
 
                     <figure>
-                        <img src="./src/pictures/Drinking/beerpong.PNG" alt="kollektiv-bilde" />
+                        <img src="./src/pictures/Rob/Line.jpg" alt="kollektiv-bilde" />
                         <p className="photo-text">
-                            Her står studentene samlet rundt bordet for den velkjente drikkeleken "beer pong".
+                        Line-Aurora Herberg Thorvaldsen (17)
                         </p>
                         <figcaption className="photographer">
                             Foto: Jenny Østreng
