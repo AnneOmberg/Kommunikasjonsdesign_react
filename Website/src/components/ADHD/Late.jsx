@@ -13,7 +13,7 @@ export default function Late() {
                     <p>Dette er det første Tora Murtnes-Hatlestad (30) hadde å si da hun fikk spørsmål om hverdagen før hun fikk diagnosen. Hun fikk diagnosen i en alder av 29 år, og det var ingen som hadde mistenkt at hun kunne ha diagnosen før nå.</p>
 
                     <figure>
-                        <img src="../src/pictures/ADHD/Tora/Tora.jpg" alt="Bilde av Tora" />
+                        <img src="../src/pictures/ADHD/Tora/Tora.png" alt="Bilde av Tora" />
                         <p className="photo-text">
                         Tora Murtnes-Hatlestad (30)
                         </p>

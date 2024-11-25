@@ -1,7 +1,11 @@
 // #late{
     .lateHeader{
-        background-image: url(../pictures/ADHD/Half-Brain.jpg);
+        background-image: url(../pictures/ADHD/Tora/Tora.jpg);
         background-position: center;
+    }
+
+    #sent{
+        margin: 3rem 3rem 0 3rem;
     }
 
     .drawing{
@@ -16,7 +20,7 @@
     }
 
     .text-box {
-        width: 20rem;
+        // width: 20rem;
         position: absolute;
         bottom: 100%; /* Position above the word */
         left: 50%;
@@ -39,6 +43,12 @@
     .services:hover .text-box {
         visibility: visible;
         opacity: 1;
+    }
+
+    @media only screen and (min-width: 750px) {
+        .text-box {
+            width: 20rem;
+        }
     }
 
 // }

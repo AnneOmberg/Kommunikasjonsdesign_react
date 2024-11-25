@@ -1,3 +1,8 @@
+.robHeader{
+    background-image: url(../pictures/Rob/AI-rob2.png);
+    background-position: center;
+}
+
 #dommen{
     color: var(--teal);
     text-decoration: underline;
@@ -13,6 +18,10 @@
 
 .noMarg{
     margin: 1rem 0 .5rem ;
+}
+
+#first{
+    margin-top: 0;
 }
 
 @media only screen and (min-width: 750px) {

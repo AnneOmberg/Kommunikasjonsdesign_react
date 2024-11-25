@@ -1,14 +1,14 @@
 export default function Early() {
     return (
         <main id="late">
-            <section className="header lateHeader">
-                <h1 className="title" id="lateTitle">Historien til Tuva</h1>
+            <section className="header earlyHeader">
+                <h1 className="title" id="earlyTitle">Historien til Tuva</h1>
                 <p className="photographer">Foto: Jenny Østreng</p>
             </section>
 
             <section id="content">
                 <article id="sent">
-                    <p className="topQuote" id="lateQuote">- Det var utrolig å se hvor stor forskjell det var, forteller hun.</p>
+                    <p className="topQuote" id="earlyQuote">- Det var utrolig å se hvor stor forskjell det var, forteller hun.</p>
 
                     <figure>
                         <img src="../src/pictures/ADHD/Tuva/tuva3.png" alt="Bilde av Tora" />
@@ -69,12 +69,14 @@ export default function Early() {
 
                     <h4>Tidlig diagnose – en blandet opplevelse</h4>
                     <p>Tuva fikk ADHD-diagnosen i ung alder, noe hun i dag ser på som en fordel.</p>
-                    <p className="sitat">- Jeg tror det hadde vært kjedeligere for meg å finne det ut senere, fordi jeg var såpass ung. Tidligere hadde ikke gjort noen stor forskjell ettersom jeg ikke hadde husket så mye da uansett.!!!</p>
+                    <p className="sitat">- Jeg tror nok det hadde vært kjedeligere for meg å finne det ut senere, var nok en fordel at jeg var såpass ung da diagnosen kom. Men å få den tidligere ville nok ikke gjort stor forskjell, jeg hadde nok ikke husket så mye av det likevel.</p>
 
-                    <p>Samtidig var det ikke uten kostnader å være den eneste i klassen med en ADHD-diagnose. </p>
+                    <p>Diagnosen åpnet også for ulike former for hjelp og støtte. Allerede på ungdomsskolen deltok Tuva på samlinger arrangert av ADHD-foreninger. Et minne hun husker spesielt godt, er en helg på Quality Hotel med badeland, hvor hun og andre med ADHD fra hele landet fikk muligheten til å møte hverandre og delta på aktiviteter. Støttekontakten hun hadde i helgene, spilte også en viktig rolle i å aktivisere henne og hjelpe henne med å få ut energi, samtidig som det ga foreldrene litt avlastning.</p>
+
+                    <p>Samtidig var det ikke uten kostnader å være den eneste i klassen med en ADHD-diagnose. På den tiden var det utfordrende å bli stilt overfor både diagnosen og de sosiale konsekvensene som fulgte.</p>
                     <p className="sitat">- På den tida var det jo veldig kjedelig. Du er seks – syv år og får vite at du har fått en diagnose liksom. Jeg ble mobbet for det, og det var tøft, innrømmer hun.</p>
 
-                    <p>Likevel føler Tuva at fordelene veide tyngre.</p>
+                    <p>Likevel føler Tuva at fordelene veide tyngre. På den tiden var det utfordrende å bli stilt overfor både diagnosen og de sosiale konsekvensene som fulgte.</p>
                     <p className="sitat">- Det var bedre å få diagnosen tidlig uansett egentlig. Jeg forstår jo nå hvorfor jeg var som jeg var når jeg var mindre. Hvorfor jeg hadde det sånn som jeg hadde det. Jeg forstår også bedre hvorfor jeg er som jeg er nå.</p>
 
                     <h4>Med åpne armer</h4>

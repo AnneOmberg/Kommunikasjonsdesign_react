@@ -32,7 +32,7 @@ export default function Rob({ setRobTitle, setRobQuote }) {
         <main id="robing">
             <section className="header robHeader">
                 <h1 className="title" id="robTitle">Ungdom utsatt for knivran <br /> – mann pågrepet kort tid etter</h1>
-                <p className="photographer">Foto: Jenny Østreng</p>
+                <p className="photographer">Foto: AI illustrasjon</p>
             </section>
 
             <section id="content">
@@ -45,7 +45,7 @@ export default function Rob({ setRobTitle, setRobQuote }) {
                     </p>
 
                     <figure>
-                        <img src="./src/pictures/Rob/Line_Oda.png" alt="Bilde av Line og Oda" />
+                        <img src="./src/pictures/Rob/line-oda.png" alt="Bilde av Line og Oda" />
                         <p className="photo-text">
                             Lengst frem står Line-Aurora Herberg Thorvaldsen (17) med Oda Randem-Hansel (17) i bakgrunn
                         </p>
@@ -57,11 +57,11 @@ export default function Rob({ setRobTitle, setRobQuote }) {
                 </article>
             </section>
 
-            <div className="row">
+            <div className="row" id="first">
                 <div className="clock">
                     <h2>18:00</h2>
                     <figure>
-                        <img src="../src/pictures/Rob/18.00.png" alt="kollektiv-bilde" />
+                        <img src="../src/pictures/Rob/18.00.png" alt="Illustrasjon av " />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
@@ -88,7 +88,7 @@ export default function Rob({ setRobTitle, setRobQuote }) {
                     </figure>
                 </div>
                 <section className="content">
-                    <p>På vei til vanntårnet ble Line sneiet av en merkelig mann på sykkel, men hun tenkte ikke noe mer over det da hun så venninen Oda komme gående</p> 
+                    <p>På vei til vanntårnet ble Line sneiet av en merkelig mann på sykkel, men hun tenkte ikke noe mer over det da hun så venninen Oda komme gående.</p> 
                         {/* <p>Annet enn dette startet turen uten problemer, men etter kort tid la Line merke til den samme mannen på sykkel som oppførte seg merkelig. Han syklet mot dem på den øde gangvei bak noen industribygg, en rute som sjelden brukes av andre.</p> */}
                     {/* <figure>
                         <img className="drawing" src="../src/pictures/ADHD/Tora/motorsykkel-backgrunn2x.webp" alt="kollektiv-bilde" />
@@ -136,24 +136,24 @@ export default function Rob({ setRobTitle, setRobQuote }) {
             <div className="row">
                 <div className="clock">
                     <h2>18:35</h2>
-                    {/* <figure>
-                        <img src="../src/pictures/Rob/18.35.png" alt="kollektiv-bilde" />
-                        <figcaption className="photographer">
-                            Illustratør: Anne May Omberg
-                        </figcaption>
-                    </figure> */}
-                </div>
-                <section className="content">
-                <h4 className="noMarg">Fra ubehag til trussel</h4>
-                
-                    <p>
-                    Mannen stanset og henvendte seg til jentene, tilsynelatende for å låne en mobiltelefon. </p>
                     <figure>
                         <img src="../src/pictures/Rob/18.35.png" alt="kollektiv-bilde" />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
                     </figure>
+                </div>
+                <section className="content">
+                <h4 className="noMarg">Fra ubehag til trussel</h4>
+                
+                    <p>
+                    Mannen stanset og henvendte seg til jentene, tilsynelatende for å låne en mobiltelefon. </p>
+                    {/* <figure>
+                        <img src="../src/pictures/Rob/18.35.png" alt="kollektiv-bilde" />
+                        <figcaption className="photographer">
+                            Illustratør: Anne May Omberg
+                        </figcaption>
+                    </figure> */}
                     <p>Line, som nylig hadde fått en ny mobil, avslo. Oda derimot, ga fra seg sin telefon. Det som startet som en tilsynelatende harmløs forespørsel, eskalerte raskt da mannen krevde passordet til telefonen.
                     </p>
                 </section>
@@ -162,23 +162,23 @@ export default function Rob({ setRobTitle, setRobQuote }) {
             <div className="row">
                 <div className="clock">
                     <h2>18:37</h2>
-                    {/* <figure>
-                        <img src="../src/pictures/Rob/18.37.png" alt="kollektiv-bilde" />
-                        <figcaption className="photographer">
-                            Illustratør: Anne May Omberg
-                        </figcaption>
-                    </figure> */}
-                </div>
-                <section className="content">
-                    <p>
-                    Da jentene nølte, dro han frem en kniv og stilte seg truende overfor dem.
-                    </p>
-                <figure>
+                    <figure>
                         <img src="../src/pictures/Rob/18.37.png" alt="kollektiv-bilde" />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
                     </figure>
+                </div>
+                <section className="content">
+                    <p>
+                    Da jentene nølte, dro han frem en kniv og stilte seg truende overfor dem.
+                    </p>
+                {/* <figure>
+                        <img src="../src/pictures/Rob/18.37.png" alt="kollektiv-bilde" />
+                        <figcaption className="photographer">
+                            Illustratør: Anne May Omberg
+                        </figcaption>
+                    </figure> */}
                     <p className="sitat">- Jeg skjønte umiddelbart hva som skjedde og ropte til Oda at vi måtte løpe, forteller Line.
                     </p>
                     
@@ -212,21 +212,22 @@ export default function Rob({ setRobTitle, setRobQuote }) {
                     <h4 className="noMarg">Pågripelse på stedet</h4>
                     <p>Lines far, som hadde kastet seg i bilen for å komme til unnsetning, ankom kort tid etter. Han plukket opp jentene og de møtte Oda’s mor ved vanntårnet, der jentene originalt hadde møttes. Her fikk Line igjen øye på mannen. - “Pappa det er han!” ropte jeg, forteller Line. Uten å nøle gikk faren til fysisk anholdelse og holdt mannen tilbake til politiet ankom stedet kort tid etterpå.</p>
                     <p>Kniven, som mannen hadde forsøkt å kvitte seg med, ble funnet i nærheten. Politiet arresterte mannen og gjennomførte avhør på stedet. Han ble senere varetektsfengslet og siktet for flere ran i området, inkludert denne hendelsen.</p>
-                    <figure>
-                        <img src="./src/pictures/Drinking/beerpong.PNG" alt="kollektiv-bilde" />
-                        <p className="photo-text">
-                            Her står studentene samlet rundt bordet for den velkjente drikkeleken "beer pong".
-                        </p>
-                        <figcaption className="photographer">
-                            Foto: Jenny Østreng
-                        </figcaption>
-                    </figure>
+                    
                 </section>
             </div>
 
             <div className="row">
                 <section className="content">
                     <h4>Konsekvenser for ofrene</h4>
+                    <figure>
+                        <img src="./src/pictures/Rob/Line.jpg" alt="Bilde av Line" />
+                        <p className="photo-text">
+                        Line-Aurora Herberg Thorvaldsen (17)
+                        </p>
+                        <figcaption className="photographer">
+                            Foto: Jenny Østreng
+                        </figcaption>
+                    </figure>
                     <p>
                     For Line har hendelsen satt dype spor. Hun har utviklet panikkangst og sliter med trygghetsfølelsen, spesielt når hun er alene eller i ukjente situasjoner.
                     </p>
