@@ -78,8 +78,8 @@ function App() {
         <Route path="/toll" element={<Toll setTollTitle={setTollTitle} setTollQuote={setTollQuote} />} />
         <Route path="/rob" element={<Rob setRobTitle={setRobTitle} setRobQuote={setRobQuote} />} />
         <Route path="/adhd" element={<RandomArticle setAdhdTitle={setAdhdTitle} setAdhdQuote={setAdhdQuote} />} />
-          <Route path="adhd/late" element={<Late />} />
-          <Route path="adhd/early" element={<Early />} />
+          <Route path="adhd/sent" element={<Late />} />
+          <Route path="adhd/tidlig" element={<Early />} />
 
       </Routes>
     </Layout>

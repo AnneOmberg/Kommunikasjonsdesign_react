@@ -43,31 +43,32 @@ export default function Late() {
 
                     <h4>Trykket på stopp</h4>
                     <p>Den første gangen Tora tok ADHD-medisin, skjedde noe som skulle forandre livet hennes. Hun og mannen Thor var på motorsykkeltur, og for første gang i sitt liv følte hun seg helt til stede. Det var bare henne, motorsykkelen, veien foran dem og Thor ved hennes side. For en stund forsvant alt annet – de konstante tankene som alltid spant rundt i fortid, nåtid og fremtid.</p>
-                    <p>Hun beskriver det som om noen hadde trykket på en «quit»-knapp for alle de åpne fanene i hodet hennes. Den kaotiske støyen som alltid hadde fulgt henne, stilnet. «Radiokanaler» hun aldri hadde valgt å høre på, men som alltid hadde spilt i bakgrunnen, ble plutselig skrudd av. For første gang kunne hun fokusere på én tanke, én opplevelse, uten å bli overveldet av alt annet.</p>
-                    <p className="sitat">- Det var en ganske syk opplevelse, forklarer hun. – Jeg innså hvordan andre må ha det hver dag.
-                    </p>
-                    <p>Selv om den første roen hun kjente kanskje har blitt mer dempet med tiden, beskriver Tora medisinen som en total «game-changer». For henne var dette øyeblikket et vendepunkt – et glimt av hvordan livet kunne føles uten det konstante tankekaoset.</p>
 
-                    <h4>En annerledes hverdag</h4>
-                    <p>Tora er helt overbevist om at hverdagen ville vært annerledes dersom diagnosen hadde kommet da hun var barn. – Det er helt umulig å forestille seg på en måte, men jeg er helt overbevist om at det selvfølgelig hadde vært annerledes. Det hadde vært helt fundamentalt annerledes for hvordan menneskene rundt meg forstod meg, og for hvordan jeg forsto meg selv. Hvis mye av det jeg har slitt med har vært på grunn av ADHD, noe jeg nå mistenker, så hadde jeg kunnet forklart det med at det ikke er fordi jeg er feil, men fordi jeg har ADHD. Da hadde jeg ikke måttet internalisere alt det som var galt med meg, jeg kunne bare sagt «jeg har ADHD, det er derfor», eller kanskje funnet bedre strategier for å håndtere det, i stedet for å måtte finne dem på egenhånd.</p>
-                    <p className="sitat">- Jeg tror det hadde hatt mye å si om man får diagnosen som barn, for da er man fremdeles i etableringen av identiteten sin. Hvis det hadde vært en del av min identitetsutvikling, i stedet for å bli en slags reset på hele min forståelse av meg selv, så tror jeg det åpenbart hadde vært to helt forskjellige liv.
-                    </p>
-                    <p>Selv om den første roen hun kjente kanskje har blitt mer dempet med tiden, beskriver Tora medisinen som en total «game-changer». For henne var dette øyeblikket et vendepunkt – et glimt av hvordan livet kunne føles uten det konstante tankekaoset.</p>
+                    <p>Hun beskriver det som om noen hadde trykket på en «quit»-knapp for alle de åpne fanene i hodet hennes. Den kaotiske støyen som alltid hadde fulgt henne, stilnet. «Radiokanaler» hun aldri hadde valgt å høre på, men som alltid hadde spilt i bakgrunnen, ble plutselig skrudd av. For første gang kunne hun fokusere på én tanke, én opplevelse, uten å bli overveldet av alt annet.</p>
                     <figure>
-                        <img src="./src/pictures/Drinking/beerpong.PNG" alt="kollektiv-bilde" />
+                        <img src="../src/pictures/ADHD/Tora-Motorsykkel.png" alt="kollektiv-bilde" />
                         <p className="photo-text">
-                            Her står studentene samlet rundt bordet for den velkjente drikkeleken "beer pong".
+                        - Det var en ganske syk opplevelse, forklarer hun. – Jeg innså hvordan andre må ha det hver dag.
                         </p>
                         <figcaption className="photographer">
                             Foto: Jenny Østreng
                         </figcaption>
                     </figure>
+                    <p className="sitat">- Det var en ganske syk opplevelse, forklarer hun. – Jeg innså hvordan andre må ha det hver dag.
+                    </p>
+                    <p>Selv om den første roen hun kjente kanskje har blitt mer dempet med tiden, beskriver Tora medisinen som en total «game-changer». For henne var dette øyeblikket et vendepunkt – et glimt av hvordan livet kunne føles uten det konstante tankekaoset.</p>
+
+                    <h4>En annerledes hverdag</h4>
+                    <p>Tora er helt overbevist om at hverdagen ville vært annerledes dersom diagnosen hadde kommet da hun var barn.</p><p className="sitat">– Det er helt umulig å forestille seg på en måte, men jeg er helt overbevist om at det selvfølgelig hadde vært annerledes. Det hadde vært helt fundamentalt annerledes for hvordan menneskene rundt meg forstod meg, og for hvordan jeg forsto meg selv. Hvis mye av det jeg har slitt med har vært på grunn av ADHD, noe jeg nå mistenker, så hadde jeg kunnet forklart det med at det ikke er fordi jeg er feil, men fordi jeg har ADHD. Da hadde jeg ikke måttet internalisere alt det som var galt med meg, jeg kunne bare sagt «jeg har ADHD, det er derfor», eller kanskje funnet bedre strategier for å håndtere det, i stedet for å måtte finne dem på egenhånd.</p>
+                    <p className="sitat">- Jeg tror det hadde hatt mye å si om man får diagnosen som barn, for da er man fremdeles i etableringen av identiteten sin. Hvis det hadde vært en del av min identitetsutvikling, i stedet for å bli en slags reset på hele min forståelse av meg selv, så tror jeg det åpenbart hadde vært to helt forskjellige liv.
+                    </p>
+                    
 
                     <h4>Kom godt forberedt</h4>
                     <p>
                     Tora deler gjerne noen råd til andre som står overfor en ADHD-utredning, spesielt kvinner som kan kjenne seg igjen i utfordringene hun selv har opplevd. Hun understreker at det er viktig å være forberedt, fordi mange jenter og kvinner får diagnoser som overlapper med ADHD, som angst, depresjon, bipolare lidelser eller personlighetsforstyrrelser. Dette kan føre til at de ikke får ADHD-diagnosen, selv om det kanskje er kjernen i det de sliter med. Hun mener det er viktig å gjøre grundig research på forhånd, sette seg inn i hvordan ADHD typisk viser seg hos kvinner, og ikke gi opp dersom man blir avvist. Hun oppfordrer også til å stille godt forberedt til legekonsultasjonen, og skrive et godt brev til spesialisthelsetjenesten (<span className="services">DPS <span className="text-box">DPS: Spesialhelsetjeneste innen psykisk helsevern for befolkningen over 18 år. (<a href="https://www.sykehuset-ostfold.no/avdelinger/klinikk-for-psykisk-helsevern-og-rusbehandling/dps-halden-og-sarpsborg/#les-mer-om-dps-halden-sarpsborg" className="DPS">Sykehuset Østfold</a>)</span> </span>), for å forklare hvordan man har det.
                     </p>
-                    <p>Et annet viktig råd er å være ærlig når man svarer på spørsmålene under utredningen. Tora forklarer: «Det er lett å være flink, og mange av spørsmålene man får kan man kanskje svare på at man ikke sliter med – særlig hvis man får diagnosen sent, fordi man har utviklet egne strategier for å håndtere utfordringene.» Hun påpeker at for å få den rette diagnosen og hjelpen, er det viktig å ikke skjule de utfordringene man fortsatt sliter med.</p>
+                    <p>Et annet viktig råd er å være ærlig når man svarer på spørsmålene under utredningen. Tora forklarer: <i className="sit">«Det er lett å være flink, og mange av spørsmålene man får kan man kanskje svare på at man ikke sliter med – særlig hvis man får diagnosen sent, fordi man har utviklet egne strategier for å håndtere utfordringene.» Hun påpeker at for å få den rette diagnosen og hjelpen, er det viktig å ikke skjule de utfordringene man fortsatt sliter med.</i></p>
                 </article>
             </section>
         </main>

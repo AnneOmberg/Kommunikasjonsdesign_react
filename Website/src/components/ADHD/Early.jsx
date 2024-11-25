@@ -13,7 +13,7 @@ export default function Early() {
                     <p>Tuva Cecilie Fjeld (28) ble diagnostiert med ADHD da hun var rundt seks år gammel, etter at lærerne på skolen oppdaget tegn og tilkalte <span className="services">PPT <span className="text-box">Står for pedagogisk-psykologisk tjeneste, som hjelper barnehager og skoler med å legge til rette for barn og elever med behov for tilrettelegging. <a href="https://www.udir.no/laring-og-trivsel/spesialpedagogikk/pp-tjenesten/">(Udir)</a></span></span>. For den lille jenta var hverdagen før diagnosen preget av mye stress og frustrasjon, særlig knyttet til lære- og skrivevansker. </p>
 
                     <figure>
-                        <img src="../src/pictures/ADHD/Tora.jpg" alt="Bilde av Tora" />
+                        <img src="../src/pictures/ADHD/tuva-test" alt="Bilde av Tora" />
                         <p className="photo-text">
                         Tora Murtnes-Hatlestad (30)
                         </p>

@@ -12,7 +12,7 @@ export default function RandomArticle({ setAdhdTitle, setAdhdQuote }) {
             setAdhdQuote(quote)
         }, [setAdhdTitle, setAdhdQuote])
     
-    const viewPoint = ["late", "early"];
+    const viewPoint = ["sent", "tidlig"];
     const [randomChoise, setRandomChoise] = useState("");
 
     const handleBtn = () => {
@@ -29,37 +29,40 @@ export default function RandomArticle({ setAdhdTitle, setAdhdQuote }) {
     return (
         <main id="adhd">
             <section className="header adhdHeader">
-                <h1 className="title" id="adhdTitle">ADHD-diagnose:<br />Hva betyr tidspunktet?</h1>
+                <h1 className="title" id="adhdTitle">To liv, én diagnose: <br /> Hvordan tidspunktet former ADHD-reisen</h1>
             </section>
             <section id="content">
                 <article id="top">
-                    <p>Mellom 2008 og 2013 var 4,3 % av gutter og 1,7 % av jenter i alderen 6–17 år registrert med en ADHD-diagnose i Norsk pasientregister, ifølge en rapport fra Folkehelseinstituttet (FHI) fra 2016. De fleste får diagnosen tidlig i skolealder, og FHI beskriver tidlig intervensjon som avgjørende for å gi barn bedre forutsetninger i livet. Likevel er det mange barn som ikke fanges opp av spesialisthelsetjenesten, noe som bidrar til underdiagnostisering – særlig blant jenter.</p>
+                    <p>Hva betyr det å få en ADHD-diagnose som barn, sammenlignet med å få den som voksen? For mange kan diagnosen være en nøkkel til bedre selvforståelse og riktig hjelp. Likevel viser statistikken tydelig et mønster: Jenter og kvinner må ofte vente lenger enn gutter før de blir sett av helsevesenet. Mellom 2008 og 2013 fikk kun 1,7 % av jenter i alderen 6–17 år en ADHD-diagnose, sammenlignet med 4,3 % av gutter, ifølge Folkehelseinstituttet (FHI). Tidlig diagnose og intervensjon i skolealder er avgjørende for å gi barn bedre forutsetninger i livet, men jenter faller ofte utenfor radaren.</p>
                 </article>
 
                 <article id="under">
                     <p>
-                        Statistikk viser en klar skjevfordeling mellom kjønnene: Mens 4,3 % av guttene i skolealder ble diagnostisert i perioden, gjaldt det samme kun 1,7 % av jentene. Denne ubalansen er ikke unik for Norge – internasjonal forskning peker på at gutters ADHD-symptomer ofte er mer synlige, preget av impulsivitet, hyperaktivitet og utagerende atferd. Jenter derimot kan ha mer subtile symptomer, noe som gjør dem lettere å overse.
+                    Internasjonal forskning peker på at gutters symptomer – som hyperaktivitet, impulsivitet og utagering – fanges opp raskere enn jenters, som ofte er mer subtile. Jenter med ADHD viser gjerne symptomer som dagdrømming, glemsomhet og problemer med organisering, noe som kan bli oversett i både skole og hjem. En norsk undersøkelse bekrefter at lærere oftere legger merke til gutters ADHD-symptomer, mens jentene forblir usynlige. Konsekvensen? Mange jenter får ikke diagnosen før langt senere i livet, og noen får den aldri.
                     </p>
 
                     <p>
-                        Her spiller lærere og foreldre en avgjørende rolle, ettersom de ofte står bak henvisningene til spesialister. Likevel viser en norsk undersøkelse at lærere har en tendens til å legge mer merke til gutters ADHD-symptomer enn jenters. Konsekvensen? Mange jenter får ikke diagnosen før langt senere i livet – eller aldri. Hva betyr dette for dem som vokser opp uten å bli sett?
+                    En undersøkelse fra OsloMet, gjennomført for ADHD Norge i 2022, gir ytterligere innsikt i hvor alvorlig problemet er. Blant 3085 voksne med ADHD svarte hele 58,6 % av kvinnene at de først fikk diagnosen etter fylte 30 år. Dårlig henvisning til spesialister og manglende oppfølging er blant årsakene som trekkes frem. Blant de som opplevde dårlig henvisning, fikk nesten halvparten diagnosen etter fylte 30. For mange kvinner betyr dette flere tiår med feil behandling, frustrasjon og en følelse av å ikke bli forstått – både av seg selv og andre.
                     </p>
                     <img src="" alt="" />
 
-                    <p>En nyere undersøkelse fra OsloMet, gjennomført for ADHD Norge i 2022, gir innsikt i utfordringene voksne med ADHD møter i helsevesenet. Av de 3085 voksne som deltok, svarte 58,6 % av kvinnene at de først fikk diagnosen etter fylte 30 år. For mange synes manglende eller dårlig henvisning til spesialister å være en viktig forklaringsfaktor. Blant de som oppga at de ikke fikk henvisning, fikk 44,8 % diagnosen etter fylte 30, og 25 % i alderen 20–30 år. </p>
+                    <p>Til tross for at ADHD er et tema som berører mange, har vi erfart at det kan være vanskelig å få kommentarer fra sentrale aktører i helsevesenet. Vi har forsøkt å kontakte Sykehuset i Østfold for å få deres synspunkter på problematikken rundt sen diagnostisering, samt hvilke tiltak som kan bidra til å bedre dagens praksis. Dessverre har vi ikke mottatt svar fra dem innen publisering av denne artikkelen.</p>
                     <img src="" alt="" />
 
-                    <p>En tilsvarende trend ble funnet blant de som rapporterte «dårlig henvisning» som utfordring: 48,4 % fikk diagnosen etter fylte 30, mens 23,2 % var i 20-årene. Dette peker på mulige svakheter i systemet som skal sikre tidlig identifisering og oppfølging, og en stor andel deltakere oppgir å ha et udekket behov for psykisk helsehjelp. Selv om årsakene kan være sammensatte, tyder funnene på et behov for å styrke henvisningspraksisen og tilgjengeligheten til spesialisthelsetjenester for voksne med ADHD. 
-                    </p>
+                    <p>Hva skjer når diagnosen kommer sent? Hvordan påvirkes livet når symptomene forblir ubehandlet gjennom barndom og ungdomstid? Og hvordan oppleves det å bli diagnostisert som barn, men møte andre utfordringer, som stigma og mobbing?</p>
+
+                    <p>I denne artikkelen møter vi Tuva og Tora. Tuva fikk diagnosen som barn, noe hun i dag ser på som en fordel. Tora, derimot, fikk diagnosen først som voksen – en erfaring som har gitt henne både svar og nye spørsmål. Gjennom deres historier får vi et unikt innblikk i hvordan tidspunktet for diagnosen kan forme livsløpet, og hvorfor tidlig hjelp er så avgjørende.</p>
                     <img src="" alt="" />
                 </article>
                 <section id="btn">
-                    <button id="Knapp" onClick={handleBtn}>Choose Story</button>
+                    <p>Hvordan kan tidspunktet for en diagnose forme livet?</p>
+                    <p>Trykk på knappen nedenfor for å lese historien som kunne vært din.</p>
+                    <button id="Knapp" onClick={handleBtn}>Velg historie</button>
                     {randomChoise && (
                         <section>
-                            <h2 id="Valg">You got {randomChoise}</h2>
+                            <h2 id="Valg">Du fikk {randomChoise}</h2>
                             <button>
-                                <Link to={`/adhd/${randomChoise}`}>Go to Story</Link>
+                                <Link to={`/adhd/${randomChoise}`}>Les historien</Link>
                             </button>
                         </section>
                     )}
