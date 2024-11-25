@@ -8,12 +8,12 @@ export default function Late() {
 
             <section id="content">
                 <article id="sent">
-                    <p className="sitat topQuote" id="lateQuote">- Hele livet har jeg egentlig lurt hvorfor det virker så lett for alle andre, når det virker som om jeg må gjøre så mye, eller at det krever så mye mer av meg enn all andre å bare gjøre det, bare fikse det.</p>
+                    <p className="topQuote" id="lateQuote">- Hele livet har jeg egentlig lurt hvorfor det virker så lett for alle andre, når det virker som om jeg må gjøre så mye, eller at det krever så mye mer av meg enn all andre å bare gjøre det, bare fikse det.</p>
 
                     <p>Dette er det første Tora Murtnes-Hatlestad (30) hadde å si da hun fikk spørsmål om hverdagen før hun fikk diagnosen. Hun fikk diagnosen i en alder av 29 år, og det var ingen som hadde mistenkt at hun kunne ha diagnosen før nå.</p>
 
                     <figure>
-                        <img src="../src/pictures/ADHD/Tora.jpg" alt="Bilde av Tora" />
+                        <img src="../src/pictures/ADHD/Tora/Tora.jpg" alt="Bilde av Tora" />
                         <p className="photo-text">
                         Tora Murtnes-Hatlestad (30)
                         </p>
@@ -23,12 +23,24 @@ export default function Late() {
                     </figure>
 
                     <h3>Manglet språk for å forstå seg selv</h3>
+                    <p>Som ung opplevde Tora aldri å bli møtt med forståelse for utfordringene sine – men det var heller aldri en mulighet, for hun lot ingen få innsyn. Hun klarte ikke å sette ord på det hun slet med, fordi hun selv manglet språket for det. I stedet antok hun at alle andre opplevde det samme som henne.</p>
+                    <p className="sitat">- Jeg har på en måte gått ut ifra at det er sånn for alle, det er bare at de er flinkere til å skjule det, eller at de har andre strategier enn meg, hvorfor har ikke jeg fått den verktøykassa på en måte, det er et eller annet jeg har ikke har lært her som de tydeligvis har, eller at alle har det til en viss grad sånn som jeg har det så derfor er det ikke noe tema å snakke om for du regner jo med at sånn her er det å være menneske for alle for jeg er jo helt vanlig, for det har jeg fått vite hjemme, ikke sant. Så jeg tror nok ikke det har vært mulig, eller at det har vært noen anledninger hvor det har vært naturlig å vise forståelse for det jeg har opplevd før nå, for nå har jeg språk om det, så nå kan jeg forklare det på en mer nyansert måte, og jeg kan forklare meg selv og livet mitt både for meg selv og for andre på en helt annen måte enn det jeg kunne før jeg fikk diagnosen.</p>
+
                     <p>
                     Gjennom oppveksten gjorde hun alt for å skjule at hun strevde med oppgaver som virket enkle for andre. ADHD var aldri noe hun vurderte som en mulig forklaring på utfordringene sine – tanken hadde ikke streifet henne. Frykten for å avsløre hvor krevende det var å henge med, førte til at hun satte seg et mål om alltid å være best.
                     </p>
+                    
+                    <figure>
+                        <img className="drawing" src="../src/pictures/ADHD/Tora/tora-prestasjon.png" alt="Illustrasjon av Tora som består en test" />
+                        <p className="photo-text">
+                        Tora Murtnes-Hatlestad (30)
+                        </p>
+                        <figcaption className="photographer">
+                            Illustratør: Anne May Omberg
+                        </figcaption>
+                    </figure>
+
                     <p className="sitat">- Man blir redd for at det skal syntes at man ikke mestrer det like lett som alle andre så da skal man på en måte være best. Så tilsynelatende fungerer man veldig bra, men det koster veldig mye, og det er så nært knytta tror jeg, det her med mestring og det å få til å være liksom ordentlig og sånn. Det er så nært knytta til å ha verdi som menneske i en sånn identitetsforståelse. Det ligger litt i samfunnet at hvis man ikke er produktiv så er man ikke verdifull på en måte, og når du da har ADHD og ikke vet det så kan det bli ganske slitsomt og vanskelig, forklarer Tora.</p>
-                    <p>Som ung opplevde Tora aldri å bli møtt med forståelse for utfordringene sine – men det var heller aldri en mulighet, for hun lot ingen få innsyn. Hun klarte ikke å sette ord på det hun slet med, fordi hun selv manglet språket for det. I stedet antok hun at alle andre opplevde det samme som henne.</p>
-                    <p className="sitat">- Jeg har på en måte gått ut ifra at det er sånn for alle, det er bare at de er flinkere til å skjule det, eller at de har andre strategier enn meg, hvorfor har ikke jeg fått den verktøykassa på en måte, det er et eller annet jeg har ikke har lært her som de tydeligvis har, eller at alle har det til en viss grad sånn som jeg har det så derfor er det ikke noe tema å snakke om for du regner jo med at sånn her er det å være menneske for alle for jeg er jo helt vanlig, for det har jeg fått vite hjemme, ikke sant. Så jeg tror nok ikke det har vært mulig, eller at det har vært noen anledninger hvor det har vært naturlig å vise forståelse for det jeg har opplevd før nå, for nå har jeg språk om det, så nå kan jeg forklare det på en mer nyansert måte, og jeg kan forklare meg selv og livet mitt både for meg selv og for andre på en helt annen måte enn det jeg kunne før jeg fikk diagnosen.</p>
 
                     <h4>Utredningen</h4>
                     <p>
@@ -46,12 +58,12 @@ export default function Late() {
 
                     <p>Hun beskriver det som om noen hadde trykket på en «quit»-knapp for alle de åpne fanene i hodet hennes. Den kaotiske støyen som alltid hadde fulgt henne, stilnet. «Radiokanaler» hun aldri hadde valgt å høre på, men som alltid hadde spilt i bakgrunnen, ble plutselig skrudd av. For første gang kunne hun fokusere på én tanke, én opplevelse, uten å bli overveldet av alt annet.</p>
                     <figure>
-                        <img src="../src/pictures/ADHD/Tora-Motorsykkel.png" alt="kollektiv-bilde" />
+                        <img className="drawing" src="../src/pictures/ADHD/Tora/motorsykkel-backgrunn2x.webp" alt="kollektiv-bilde" />
                         <p className="photo-text">
                         - Det var en ganske syk opplevelse, forklarer hun. – Jeg innså hvordan andre må ha det hver dag.
                         </p>
                         <figcaption className="photographer">
-                            Foto: Jenny Østreng
+                            Illustratør: Anne May Omberg
                         </figcaption>
                     </figure>
                     <p className="sitat">- Det var en ganske syk opplevelse, forklarer hun. – Jeg innså hvordan andre må ha det hver dag.

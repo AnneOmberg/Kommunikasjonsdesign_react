@@ -22,7 +22,7 @@ export default function Drinking({ setDrinkTitle, setDrinkQuote }) {
 
             <section id="content">
                 <article id="drinking">
-                    <p className="sitat topQuote" id="drinkQuote">- Jeg synes det er litt leit at det alltid er alkohol med i bildet når man skal finne på noe med andre studenter, sier Jonas Heggelund (24), student ved Høgskolen i Østfold</p>
+                    <p className="topQuote" id="drinkQuote">- Jeg synes det er litt leit at det alltid er alkohol med i bildet når man skal finne på noe med andre studenter, sier Jonas Heggelund (24), student ved Høgskolen i Østfold</p>
 
                     <figure>
                         <img src="./src/pictures/Drinking/man-drink.PNG" alt="kollektiv-bilde" />

@@ -145,9 +145,15 @@ a{
     font-size: 1.75rem;
 }
 
-.sitat, .sit {
+.sitat, .sit, .topQuote {
     font-style: italic;
     font-weight: 300;
+}
+
+.sitat{
+    border-left: .5rem solid var(--orange);
+    padding-left: .5rem;
+    background-color: rgb(15, 108, 94, .05);
 }
 
 figure{

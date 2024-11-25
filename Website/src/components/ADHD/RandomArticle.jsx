@@ -35,7 +35,23 @@ export default function RandomArticle({ setAdhdTitle, setAdhdQuote }) {
                 <article id="top">
                     <p>Hva betyr det å få en ADHD-diagnose som barn, sammenlignet med å få den som voksen? For mange kan diagnosen være en nøkkel til bedre selvforståelse og riktig hjelp. Likevel viser statistikken tydelig et mønster: Jenter og kvinner må ofte vente lenger enn gutter før de blir sett av helsevesenet. Mellom 2008 og 2013 fikk kun 1,7 % av jenter i alderen 6–17 år en ADHD-diagnose, sammenlignet med 4,3 % av gutter, ifølge Folkehelseinstituttet (FHI). Tidlig diagnose og intervensjon i skolealder er avgjørende for å gi barn bedre forutsetninger i livet, men jenter faller ofte utenfor radaren.</p>
                 </article>
+                </section>
 
+                <section id="chart">
+            <ResponsiveContainer width="100%" height={400}>
+                <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="age" label={{ value: "Alder (År)", position: "insideBottom", offset: -5 }} />
+                    <YAxis label={{ value: "Prosent (%)", angle: -90, position: "insideLeft" }} />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="Jenter" fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
+                    <Bar dataKey="Gutter" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
+                    </BarChart>
+                </ResponsiveContainer>
+            </section>
+
+            <section id="content">
                 <article id="under">
                     <p>
                     Internasjonal forskning peker på at gutters symptomer – som hyperaktivitet, impulsivitet og utagering – fanges opp raskere enn jenters, som ofte er mer subtile. Jenter med ADHD viser gjerne symptomer som dagdrømming, glemsomhet og problemer med organisering, noe som kan bli oversett i både skole og hjem. En norsk undersøkelse bekrefter at lærere oftere legger merke til gutters ADHD-symptomer, mens jentene forblir usynlige. Konsekvensen? Mange jenter får ikke diagnosen før langt senere i livet, og noen får den aldri.
@@ -67,19 +83,6 @@ export default function RandomArticle({ setAdhdTitle, setAdhdQuote }) {
                         </section>
                     )}
                 </section>
-            </section>
-            <section id="chart">
-            <ResponsiveContainer width="100%" height={400}>
-                <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="age" label={{ value: "Alder (År)", position: "insideBottom", offset: -5 }} />
-                    <YAxis label={{ value: "Prosent (%)", angle: -90, position: "insideLeft" }} />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="Jenter" fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
-                    <Bar dataKey="Gutter" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
-                    </BarChart>
-                </ResponsiveContainer>
             </section>
         </main>
     )

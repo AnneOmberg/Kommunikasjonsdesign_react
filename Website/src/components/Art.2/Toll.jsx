@@ -23,7 +23,7 @@ export default function Toll({ setTollTitle, setTollQuote }) {
                 <section id="content">
                     <article id="bom">
                         <section id="top">
-                            <p className="sitat topQuote" id="tollQuote">-	De som styrer Sarpsborg vet ikke hvordan det er å sitte med tom lommebok, og istedenfor å se mennesker ser de tall, sier Gitte Yvonne Bjørndal Olsen (55) fra Sarpsborg.</p>
+                            <p className="topQuote" id="tollQuote">-	De som styrer Sarpsborg vet ikke hvordan det er å sitte med tom lommebok, og istedenfor å se mennesker ser de tall, sier Gitte Yvonne Bjørndal Olsen (55) fra Sarpsborg.</p>
                             <p>For mange i Sarpsborg og Fredrikstad har bompenger blitt en stor utgift i hverdagen. Flere innbyggere må krysse bomringen daglig – til jobb, familie og fritid – og føler at bompengene påvirker både økonomi og livskvalitet.</p>
                             
                             <p className="sitat">– Det er en regning som kommer på toppen av alt annet, som man egentlig aldri har råd til, sier Gitte Yvonne Bjørndal Olsen (55) fra Sarpsborg.</p>

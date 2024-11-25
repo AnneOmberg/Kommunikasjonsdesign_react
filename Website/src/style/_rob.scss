@@ -2,3 +2,106 @@
     color: var(--teal);
     text-decoration: underline;
 }
+
+#rob{
+    margin: 3rem 3rem 0 3rem;
+}
+
+.row{
+    margin: 3rem 3rem 0 3rem;
+}
+
+.noMarg{
+    margin: 1rem 0 .5rem ;
+}
+
+@media only screen and (min-width: 750px) {
+    // #time{
+    //     grid-column: 1;
+    // }
+
+    // .para{
+    //     grid-column: 2;
+    // }
+
+    // #fir{
+    //     grid-row: 3;
+    // }
+
+    // #sec{
+    //     grid-row: 4;
+    // }
+
+    // #the{
+    //     grid-row: 5;
+    // }
+
+    #stuff{
+        grid-column: 2;
+    }
+
+    // // #first{
+    // //     grid-column: 2;
+    // // }
+    // // .clock{
+    // //     grid-column: 1;
+    // //     // position: sticky;
+    // //     // top: 1rem;
+    // //     // margin: 3rem .5rem;
+    // //     // grid-row: 3;
+    // // }
+
+    // #one{
+    //     grid-row: 3;
+    //     grid-column: 1;
+    //     position: sticky;
+    //     top: 1rem;
+    //     margin: 3rem .5rem;
+    // }
+
+    // #two{
+    //     grid-row: 4;
+    //     grid-column: 1;
+    //     position: sticky;
+    //     top: 1rem;
+    //     margin: 3rem .5rem;
+    // }
+
+    // #three{
+    //     grid-row: 5;
+    //     grid-column: 1;
+    //     position: sticky;
+    //     top: 1rem;
+    //     margin: 3rem .5rem;
+    // }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* Left: Time, Center: Content, Right: Optional */
+        gap: 1rem;
+
+      }
+      
+      div.row {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 2fr; /* Adjust columns within each row */
+        grid-column: span 2; /* Makes sure each pair spans across 2 columns */
+        align-items: start; /* Align items to the start of their grid cells */
+        position: relative; /* Establishes a new containing block for sticky positioning */
+        
+      }
+      
+      div.clock {
+        margin-left: 1rem;
+        position: sticky;
+        top: 1rem; /* Keeps the time sticky within its container */
+        grid-column: 1; /* Place time in the first column */
+      }
+      
+      section.content {
+        grid-column: 2; /* Place paragraph in the second column */
+        align-self: center;
+      }
+      
+      
+}

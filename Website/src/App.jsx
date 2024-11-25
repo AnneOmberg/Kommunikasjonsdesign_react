@@ -14,6 +14,7 @@ import RandomArticle from './components/ADHD/RandomArticle'
 import Late from './components/ADHD/Late'
 import Early from './components/ADHD/Early'
 import Rob from './components/Art.3/Rob'
+import Rob2 from './components/Art.3/Rob2'
 
 function App() {
   const [drinkTitle, setDrinkTitle] = useState("")
