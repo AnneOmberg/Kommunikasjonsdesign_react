@@ -12,3 +12,36 @@ export const data = [
   { age: 16, Gutter: 6.4, Jenter: 2.2 },
   { age: 17, Gutter: 6.3, Jenter: 2.1 },
 ];
+
+export const data1 = [
+  {
+    gender: "Kvinne",
+    "1 - Før eller mens jeg gikk på barneskolen": 5,
+    "2 - På ungdomsskolen": 8,
+    "3 - På videregående skole (ca. 16 til 19 år)": 10,
+    "4 - Da jeg var mellom 20 og 30 år": 15,
+    "5 - Etter jeg fylte 30 år": 58.6,
+    "6 - Vet ikke": 3,
+  },
+  {
+    gender: "Mann",
+    "1 - Før eller mens jeg gikk på barneskolen": 6,
+    "2 - På ungdomsskolen": 10,
+    "3 - På videregående skole (ca. 16 til 19 år)": 12,
+    "4 - Da jeg var mellom 20 og 30 år": 20,
+    "5 - Etter jeg fylte 30 år": 48,
+    "6 - Vet ikke": 4,
+  },
+];
+
+export const data2 = [
+  {
+    category: "Fikk ikke henvisning",
+    "1 - Før eller mens jeg gikk på barneskolen": 5,
+    "2 - På ungdomsskolen": 10,
+    "3 - På videregående skole (ca. 16 til 19 år)": 20,
+    "4 - Da jeg var mellom 20 og 30 år": 30,
+    "5 - Etter jeg fylte 30 år": 25,
+    "7 - Har ikke fått diagnosen, men er under utredning": 10,
+  },
+];

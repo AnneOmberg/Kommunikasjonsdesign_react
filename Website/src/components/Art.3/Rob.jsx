@@ -59,9 +59,9 @@ export default function Rob({ setRobTitle, setRobQuote }) {
 
             <div className="row" id="first">
                 <div className="clock">
-                    <h2>18:00</h2>
+                    <h2 className="tim">18:00</h2>
                     <figure>
-                        <img src="../src/pictures/Rob/18.00.png" alt="Illustrasjon av " />
+                        <img src="../src/pictures/Rob/1800.png" alt="Illustrasjon av " />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
@@ -79,9 +79,9 @@ export default function Rob({ setRobTitle, setRobQuote }) {
             {/* Another pair */}
             <div className="row">
                 <div className="clock">
-                    <h2>18:20</h2>
+                    <h2 className="tim">18:20</h2>
                     <figure>
-                        <img src="../src/pictures/Rob/18.20.png" alt="kollektiv-bilde" />
+                        <img src="../src/pictures/Rob/1820.png" alt="kollektiv-bilde" />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
@@ -104,9 +104,9 @@ export default function Rob({ setRobTitle, setRobQuote }) {
 
             <div className="row">
                 <div className="clock">
-                    <h2>18:30</h2>
+                    <h2 className="tim">18:30</h2>
                     <figure>
-                        <img src="../src/pictures/Rob/18.30.png" alt="kollektiv-bilde" />
+                        <img src="../src/pictures/Rob/1830.png" alt="kollektiv-bilde" />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
@@ -135,9 +135,9 @@ export default function Rob({ setRobTitle, setRobQuote }) {
 
             <div className="row">
                 <div className="clock">
-                    <h2>18:35</h2>
+                    <h2 className="tim">18:35</h2>
                     <figure>
-                        <img src="../src/pictures/Rob/18.35.png" alt="kollektiv-bilde" />
+                        <img src="../src/pictures/Rob/1835.png" alt="kollektiv-bilde" />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
@@ -161,9 +161,9 @@ export default function Rob({ setRobTitle, setRobQuote }) {
 
             <div className="row">
                 <div className="clock">
-                    <h2>18:37</h2>
+                    <h2 className="tim">18:37</h2>
                     <figure>
-                        <img src="../src/pictures/Rob/18.37.png" alt="kollektiv-bilde" />
+                        <img src="../src/pictures/Rob/1837.png" alt="kollektiv-bilde" />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
@@ -187,9 +187,9 @@ export default function Rob({ setRobTitle, setRobQuote }) {
 
             <div className="row">
                 <div className="clock">
-                    <h2>18:38-39</h2>
+                    <h2 className="tim">18:38-39</h2>
                     <figure>
-                        <img src="../src/pictures/Rob/18.38-39.png" alt="kollektiv-bilde" />
+                        <img src="../src/pictures/Rob/1838-39.png" alt="kollektiv-bilde" />
                         <figcaption className="photographer">
                             Illustratør: Anne May Omberg
                         </figcaption>
@@ -206,7 +206,13 @@ export default function Rob({ setRobTitle, setRobQuote }) {
 
             <div className="row">
                 <div className="clock">
-                    <h2>18:42-18:59</h2>
+                    <h2 className="tim">18:42-18:59</h2>
+                    <figure>
+                        <img src="../src/pictures/Rob/1842-59.png" alt="kollektiv-bilde" />
+                        <figcaption className="photographer">
+                            Illustratør: Anne May Omberg
+                        </figcaption>
+                    </figure>
                 </div>
                 <section className="content">
                     <h4 className="noMarg">Pågripelse på stedet</h4>
@@ -237,7 +243,7 @@ export default function Rob({ setRobTitle, setRobQuote }) {
 
             <div className="row">
                 <div className="clock">
-                    <h2>16.april</h2>
+                    <h2 className="tim">16.april</h2>
                 </div>
                 <section className="content">
                     <p>Rettsprosessen, som fant sted et halvt år senere, ga en viss avslutning. Mannen ble dømt til varetektsfengsling og 72 dagers fengsel, i tillegg til erstatningskrav til jentene.</p>
